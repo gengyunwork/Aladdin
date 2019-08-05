@@ -1,7 +1,24 @@
 {
   "pages": [
-    "pages/homePage/homePage",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/tickets/tickets",
+    "pages/user/user",
+    "pages/home/travelAround/travelAround",
+    "pages/home/vipOnly/vipOnly",
+    "pages/home/shareMoney/shareMoney",
+    "pages/home/bargain/bargain",
+    "pages/home/applyVip/apply",
+    "pages/home/applyPartner/partner",
+    "pages/home/travelNote/note",
+    "pages/home/strategy/strategy",
+    "pages/user/order/order",
+    "pages/user/favorite/favorite",
+    "pages/user/note/note",
+    "pages/user/message/message",
+    "pages/user/vipCenter/vipCenter",
+    "pages/user/private/private",
+    "pages/user/distribution/distribution"
   ],
   "window": {
     "backgroundTextStyle": "light",
