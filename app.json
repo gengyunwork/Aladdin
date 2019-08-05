@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/homePage/homePage",
     "pages/logs/logs"
   ],
   "window": {
@@ -12,6 +12,5 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }
