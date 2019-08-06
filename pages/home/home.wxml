@@ -8,7 +8,7 @@
       <text class='place'>哈尔滨</text>
     </view>
     <!-- 搜索 -->
-    <view class='cu-bar search'>
+    <view class='cu-bar search' bindtap='linkToSearch'>
       <view class="search-form round" style='background:white'>
         <text class="cuIcon-search"></text>
         <input type="text" placeholder="哈尔滨北方森林动物园" confirm-type="search"></input>
@@ -103,3 +103,4 @@
   </view>
 
 </view>
+

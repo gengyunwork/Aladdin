@@ -18,7 +18,8 @@
     "pages/user/message/message",
     "pages/user/vipCenter/vipCenter",
     "pages/user/private/private",
-    "pages/user/distribution/distribution"
+    "pages/user/distribution/distribution",
+    "pages/home/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +29,8 @@
     "navigationStyle": "custom"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "base-top-bar": "/components/BaseTopBar/BaseTopBar"
   },
   "tabBar":{
     "color":"#333",

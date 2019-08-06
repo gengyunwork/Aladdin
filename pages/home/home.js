@@ -199,6 +199,12 @@ Page({
     }
 
   },
+  //点击搜索框
+  linkToSearch:function(e){
+    wx.navigateTo({
+      url: 'search/search',
+    })
+  },
   // cardSwiper
   cardSwiper(e) {
     this.setData({

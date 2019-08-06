@@ -1,0 +1,17 @@
+<!--components/BaseTopBar/BaseTopBar.wxml-->
+<!-- 通用顶部导航栏   -->
+
+<!-- 用法
+
+已全局注册
+  <base-top-bar title="{{titleValue}}"></base-top-bar>
+
+ -->
+ 
+<view class="topbar-wrapper">
+  <image src="/images/topbar01.png" class="topbar-bg"></image>
+  <image src="/images/topbar02.png" class="topbar-bg"></image>
+  <cu-custom class="base-topbar text-white" isBack="{{true}}">
+    <view slot="content">{{title}}</view>
+  </cu-custom>
+</view>

@@ -1,0 +1,20 @@
+/* components/BaseTopBar/BaseTopBar.wxss */
+.topbar-wrapper{
+  position: relative;
+}
+
+.topbar-bg{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  
+}
+.topbar-bg:nth-child(1){
+  height: 40rpx;
+}
+
+.topbar-bg:nth-child(2){
+  top:40rpx;
+  height: 88rpx;
+}
