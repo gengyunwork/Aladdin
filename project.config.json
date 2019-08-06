@@ -42,9 +42,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "pages/user/user",
-					"pathName": "pages/user/user",
+					"id": 0,
+					"name": "search",
+					"pathName": "pages/home/search/search",
+					"query": "",
 					"scene": null
 				}
 			]
