@@ -2,7 +2,7 @@
 <view class="bg-white" style="height:100vh;">
   <base-top-bar title="搜索"></base-top-bar>
   <view class="cu-bar search bg-white">
-    <view class="search-form round">
+    <view class="search-form round margin-right-0">
       <text class="cuIcon-search"></text>
       <input type="text" confirm-type="search" value="{{searchString}}" bindinput="searchInput"></input>
     </view>

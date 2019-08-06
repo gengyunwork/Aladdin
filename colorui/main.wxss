@@ -2946,6 +2946,19 @@ scroll-view.cu-steps .cu-item {
   margin: 0;
 }
 
+.margin-lr-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.margin-left-0 {
+  margin-left: 0 !important;
+}
+
+.margin-right-0 {
+  margin-right: 0 !important;
+}
+
 .margin-xs {
   margin: 10rpx;
 }
@@ -3098,6 +3111,11 @@ scroll-view.cu-steps .cu-item {
 
 .padding-0 {
   padding: 0;
+}
+
+.padding-lr-0 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .padding-xs {
