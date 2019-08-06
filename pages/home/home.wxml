@@ -1,4 +1,105 @@
 <!--pages/homePage.wxml-->
-<view>
-  <image></image>
+<view style='background:white;'>
+  <!-- 搜索 + 地址 -->
+  <view class='headImg flex justify-end' style=' flex-direction: column'>
+    <!-- 地址 -->
+    <view class='address'>
+      <text>阿拉叮</text>
+      <text class='place'>哈尔滨</text>
+    </view>
+    <!-- 搜索 -->
+    <view class='cu-bar search'>
+      <view class="search-form round" style='background:white'>
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="哈尔滨北方森林动物园" confirm-type="search"></input>
+      </view>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view style='margin-top:-20rpx;'>
+    <swiper class="card-swiper " circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+      <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+        <view class="swiper-item">
+          <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+          <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 选项卡 -->
+  <view class='chooseBar'>
+    <view class='chooseItem' wx:for="{{chooseList}}" wx:key bindtap='linkToWhere' data-id="{{item.id}}">
+      <view class='chooseBody'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='chooseFooter'>{{item.title}}</view>
+    </view>
+  </view>
+  <!-- 广告 -->
+  <view class='adBar'>
+    <image src='{{adImg}}'></image>
+  </view>
+  <!-- 超值优惠 -->
+  <view class='cheapBar'>
+    <view class='cheapHead'>
+      <text class='cheapName'>超值优惠</text>
+      <text class='cheapMore'>更多</text>
+      <text class="cuIcon-right" style='color:#999999;'></text>
+    </view>
+    <!-- 分割线 -->
+    <view class='width:100%;height:2rpx;border:1rpx solid;margin-top:10rpx;margin-bottom:10rpx;'></view>
+    <!-- 图片列表 -->
+    <view class='cheapList' wx:for="{{cheapList}}" wx:key data-id="{{item.id}}">
+      <view class="cheapItem {{item.id == 1||item.id ==2? 'first':'second'}}">
+        <view class="cheapShow {{item.id == 1||item.id ==2? 'show':'noshow'}}">清凉一夏</view>
+        <image src='{{item.img}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 会员部落 -->
+  <view class='vipBar'>
+    <view class='vipHead'>
+      <text class='vipName'>会员部落</text>
+    </view>
+    <!-- 分割线 -->
+    <view class='width:100%;height:2rpx;border:1rpx solid;margin-top:30rpx;'></view>
+    <!-- 选项卡 -->
+    <view class='grid col-3'>
+      <view class='vipList ' wx:for="{{vipList}}" wx:key >
+        <view class='vipItem'>
+          <view style='width:220rpx;height:260rpx;'>
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class='vipShow1'>{{item.title}}</view>
+          <view class='vipShow2' data-id="{{item.id}}" bindtap='linkToVip'>GO</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 精品活动 -->
+  <view class='qualityBar'>
+    <!-- 分割线 -->
+    <view class='qualityHead'>
+      <view style='width:35%;height:1rpx;background:#8936E3;float:left'></view>
+      <view style='float:left;width:30%;height:27rpx;padding:0;line-height:27rpx;text-align:center;margin-top:-10rpx;'>精品活动</view>
+      <view style='width:35%;height:1rpx;background:#8936E3;float:left'></view>
+    </view>
+    <view class='qualityList' wx:for="{{qualityList}}" wx:key>
+      <view class='qualityItem'>
+        <view class='qualityImg'>
+          <image src='{{item.img}}'></image>
+        </view>
+        
+        <view class='qualityTitle'>{{item.title}}</view>
+        <view class='qualityPrice1'>￥{{item.price1}}</view>
+        <view class='qualityPrice2'>￥{{item.price2}} 会员价</view>
+        <view class='qualityBtn'>年会员预约</view>
+        <view class='qualityDate'>有效期{{item.date1}}至{{item.date2}}</view>
+
+        <!-- <view style='clear:both'></view> -->
+      </view>
+    </view>
+  </view>
+
 </view>
