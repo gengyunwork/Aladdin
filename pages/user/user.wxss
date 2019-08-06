@@ -1,1 +1,9 @@
 /* pages/user/user.wxss */
+.user-func{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  background: white;
+  padding: 22rpx 15rpx;
+}
