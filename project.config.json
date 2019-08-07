@@ -43,8 +43,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "search",
-					"pathName": "pages/user/user",
+					"name": "classify",
+					"pathName": "pages/classify/classify",
 					"query": "",
 					"scene": null
 				}
