@@ -7,6 +7,10 @@ Component({
     title:{
       type:"String",
       value:''
+    },
+    isBack:{
+      type:"Boolean",
+      value:true
     }
   },
 
