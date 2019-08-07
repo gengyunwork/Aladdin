@@ -1,1 +1,6 @@
 /* pages/home/vipOnly/vipOnly.wxss */
+.headImg {
+  width: 100%;
+  height: 260rpx;
+  margin-bottom: 20rpx;
+}

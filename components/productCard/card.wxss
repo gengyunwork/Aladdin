@@ -1,0 +1,91 @@
+/* components/productCard/card.wxss */
+
+.showImg {
+  width: 240rpx;
+  height: 200rpx;
+  position: relative;
+  float: left;
+}
+
+.showPlace {
+  width: 100%;
+  height: 40rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 40rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.showPlace text {
+  color: white;
+}
+.showTitle {
+  float: left;
+  width: 410rpx;
+  height: 70rpx;
+  margin-left: 10rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  line-height: 35rpx;
+}
+.showToast {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 433rpx;
+  line-height: 42rpx;
+  font-size: 24rpx;
+    margin-left: 10rpx;
+    float: left;
+}
+.showKey {
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 12rpx;
+  width: 420rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.key {
+  width: 110rpx;
+  height: 30rpx;
+  background: #6FC7FA;
+  border-radius: 6rpx;
+  color: white;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 32rpx;
+  margin-right: 20rpx;
+}
+.showMan {
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  font-size: 20rpx;
+  width: 426rpx;
+  color: #999;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.showBtn {
+  width: 160rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 1rpx solid #9F34DA;
+  color: #9F34DA;
+  border-radius:6rpx;
+}
