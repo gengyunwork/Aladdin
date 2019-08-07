@@ -69,7 +69,6 @@ Page({
       searchString: e.detail.value
     })
   },
-  cancel() {},
   search() {
     console.log(this.data.searchString)
   }
