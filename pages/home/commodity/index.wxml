@@ -1,0 +1,100 @@
+<!--pages/home/commodity/index.wxml-->
+<base-top-bar title="商品详情"></base-top-bar>
+<view id='root'>
+  <!-- 轮播 -->
+  <!-- <image src='{{headImg}}'></image> -->
+  <view style='margin-bottom: 20rpx;'>
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key style="width:100%;height:260rpx;margin-bottom: 20rpx;">
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view style='width:100%;margin-top:-10rpx;border-radius:10rpx;'>
+    <!-- 3个保证 -->
+    <view class='ensureList'>
+      <view class='ensureItem' wx:for="{{ensureList}}" :key>
+        <text class="cuIcon-roundcheck text-red"></text>
+        <text style='margin-left:11rpx;'>{{item.title}}</text>
+      </view>
+    </view>
+    <!-- 信息 -->
+    <view class='com-msg'>
+      <view class='com-name'>{{name}}</view>
+      <view class='com-ps'>{{ps}}</view>
+      <view class='com-others'>
+        <view class='com-price'>
+          <text class='com-price1'>￥{{price1}}</text>
+          <text class='com-price2'>￥{{price2}}会员价</text>
+        </view>
+        <text class='com-num'>{{num}}人购买</text>
+      </view>
+    </view>
+    <!-- 地址 -->
+    <view class='com-address'>
+      <text>{{address}}</text>
+      <text>{{distance}}</text>
+    </view>
+
+    <!-- 详情 -->
+    <view class='com-details'>
+      <view class='com-details-title'>
+        <text>详情</text>
+      </view>
+      <view class='com-details-content'>富文本内容</view>
+    </view>
+
+    <!-- 相关游记 -->
+    <view class='com-note'>
+      <view class='com-note-title'>
+        <text>相关游记</text>
+      </view>
+      <view>
+        <scroll-view class="scroll-box" scroll-x scroll-with-animation scroll-into-view="{{toView}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
+          <view class="card-box" id="card_{{index}}" wx:for="{{list}}" wx:key="{{item.id}}">
+            <view class='card'>
+              <view class='cardName'>{{item.name}}</view>
+              <view class='cardPs'>{{item.ps}}</view>
+              <view class='cardOthers'>
+                <view style='width:65rpx;height:65rpx;'>
+                  <image src='{{item.userImg}}' style='border-radius: 50%;'></image>
+                </view>
+                <text style='font-size:20rpx;'>{{item.userName}}</text>
+                <view style='display:flex;flex-flow:row nowrap;align-items:flex-end;'>
+                  <text class="cuIcon-attentionfill text-gray"></text>
+                  <text style='font-size:18rpx;'>{{item.userNum}}</text>
+                </view>
+                <view style='width:153rpx;height:100rpx'>
+                  <image src='{{item.img}}'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部bar -->
+  <view class='bar'>
+    <view class="cu-bar bg-white tabbar border shop">
+      <button class="action" open-type="contact">
+        <view class="cuIcon-service text-green">
+          <view class="cu-tag badge"></view>
+        </view>
+        客服
+      </button>
+
+      <view class="action text-orange" wx:if="{{collected}}" catchtap='onCollectionTap' data-collected='{{collected}}'>
+        <view class="cuIcon-favorfill"></view> 已收藏
+      </view>
+
+      <view class="action" wx:else catchtap='onCollectionTap' data-collected='{{collected}}'>
+        <view class="cuIcon-favorfill"></view> 收藏
+      </view>
+      <view class="bg-red submit">立即订购</view>
+    </view>
+  </view>
+
+</view>

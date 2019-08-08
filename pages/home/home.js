@@ -40,7 +40,7 @@ Page({
     chooseList: [{
       id: "0",
       title: "周边游",
-      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travelAround.png",
+      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travelImg.png",
     }, {
       id: "1",
       title: "会员专享",

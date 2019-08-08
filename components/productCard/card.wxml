@@ -2,11 +2,16 @@
 <!-- 
 @component params
         @cardData { Object } 
-          数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 已售人数}
-  -->
- 
+          
+          @样式1 skin=1
+          @数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 已售人数,goods_id 商品id}
 
-<view style='padding: 0 30rpx 20rpx 30rpx;'>
+          @样式2 skin=2
+          @数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 购买人数 ,price_vip 会员价, price正常价，goods_id 商品id}
+  -->
+
+
+<view style='padding: 0 30rpx 20rpx 30rpx;' catchtap='click_card' data-id="{{cardData.goods_id}}">
   <view class="showImg">
     <image src='{{cardData.img}}'></image>
     <view class='showPlace'>
@@ -20,9 +25,17 @@
       <view class='key' wx:for="{{cardData.keyList}}" wx:key>
         <text>{{item}}</text> </view>
     </view>
-    <view class='showMan'>
-      <text>已售{{cardData.num}}人</text>
-      <view class='showBtn'>免费领取</view>
+
+    <!-- skin=1 -->
+    <view class='showMan1' wx:if="{{skin == 1}}">
+        <text>已售{{cardData.num}}人</text>
+        <view class='showBtn'>免费领取</view>
+    </view>
+    <!-- skin=2 -->
+    <view class='showMan2' wx:if="{{skin == 2}}">
+      <text>{{cardData.num}}人购买</text>
+      <text style='color:#E71515;font-size:22rpx;'>￥{{cardData.price_vip}}会员价</text>
+      <text style='font-size:32rpx;color:#333333'>￥{{cardData.price}}</text>
     </view>
   </view>
 
