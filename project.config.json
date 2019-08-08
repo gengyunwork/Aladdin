@@ -56,9 +56,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "tips",
-					"pathName": "pages/home/travelNote/tips/tips",
+					"id": 2,
+					"name": "pages/home/travelNote/note",
+					"pathName": "pages/home/travelNote/note",
 					"query": "",
 					"scene": null
 				}
