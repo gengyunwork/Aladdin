@@ -7,7 +7,7 @@
 
 
 <view class="flex  text-lg bg-white">
-  <view class="flex-treble  padding-sm radius">二龙山游记二龙山游记</view>
+  <view class="flex-treble  padding-sm radius">{{articalData.title}}</view>
   <view class="flex-sub  padding-sm radius flex align-center">
     <text class="cuIcon-like text-grey margin-lr " bindtap="apreciateTip"></text>
     <button open-type="share" plain="{{true}}" style="border:0px solid red;">
@@ -23,7 +23,7 @@
         <text class="cuIcon-title text-purple "></text>
         <text class="grid col-2">
           <text class="text-sm margin-right-sm"> 出发时间</text>
-        <text class="text-xs text-grey">2019-03-05</text>
+        <text class="text-xs text-grey">{{articalData.create_at}}</text>
         </text>
       </view>
     </view>
@@ -32,7 +32,7 @@
         <text class="cuIcon-title text-purple "></text>
         <text class="grid col-2">
           <text class="text-sm margin-right-sm"> 人数</text>
-        <text class="text-xs text-grey">5人</text>
+        <text class="text-xs text-grey">{{articalData.peopleNum}}人</text>
         </text>
       </view>
     </view>
@@ -41,7 +41,7 @@
         <text class="cuIcon-title text-purple "></text>
         <text class="grid col-2">
           <text class="text-sm margin-right-sm"> 人均消费</text>
-        <text class="text-xs text-grey">126元</text>
+        <text class="text-xs text-grey">{{articalData.average}}元</text>
         </text>
       </view>
     </view>
@@ -51,7 +51,7 @@
     <view class="pipe "></view>
   </view>
 
-  <view class="flex align-center justify-center text-lg flex-treble">二龙山</view>
+  <view class="flex align-center justify-center text-lg flex-treble">{{articalData.position}}</view>
 </view>
 
 <view class="padding text-center bg-white">
@@ -59,9 +59,9 @@
 </view>
 
 <view class="bg-white flex justify-between padding-sm">
-  <text>声明此游记著作权归“用户”所有</text>
+  <text>声明此游记著作权归“{{articalData.user}}”所有</text>
   <view>
-    <text class="cuIcon-likefill text-mauve"></text> 3600
+    <text class="cuIcon-likefill text-mauve"></text> {{articalData.appreciateNum}}
   </view>
 </view>
 

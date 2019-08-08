@@ -34,6 +34,17 @@ Page({
       type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
+    articalData:{
+      id:1,
+      title:"二龙山游记",
+      appreciateNum:3600,
+      create_at:"2019-06-26",
+      peopleNum:5,
+      average:126,
+      position:"二龙山",
+      richerText:"",
+      user:"李晓云"
+    }
   },
 
   /**
