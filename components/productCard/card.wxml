@@ -1,0 +1,30 @@
+<!--components/productCard/card.wxml-->
+<!-- 
+@component params
+        @cardData { Object } 
+          数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 已售人数}
+  -->
+ 
+
+<view style='padding: 0 30rpx 20rpx 30rpx;'>
+  <view class="showImg">
+    <image src='{{cardData.img}}'></image>
+    <view class='showPlace'>
+      <text>{{cardData.place}}</text>
+    </view>
+  </view>
+  <view class='showWord'>
+    <view class='showTitle'>{{cardData.title}}</view>
+    <view class='showToast'>{{cardData.toast}}</view>
+    <view class='showKey'>
+      <view class='key' wx:for="{{cardData.keyList}}" wx:key>
+        <text>{{item}}</text> </view>
+    </view>
+    <view class='showMan'>
+      <text>已售{{cardData.num}}人</text>
+      <view class='showBtn'>免费领取</view>
+    </view>
+  </view>
+
+  <view style='clear:both'></view>
+</view>

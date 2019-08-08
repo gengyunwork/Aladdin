@@ -16,3 +16,8 @@
   height: 48rpx;
   width: 48rpx;
 }
+
+image {
+  width: 100%;
+  height: 100%;
+}

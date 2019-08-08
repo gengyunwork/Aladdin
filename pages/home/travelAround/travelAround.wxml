@@ -1,3 +1,17 @@
 <!--pages/home/travelAround/travelAround.wxml-->
 <!-- 周边游 -->
-<text>pages/home/travelAround/travelAround.wxml</text>
+<base-top-bar title="周边游"></base-top-bar>
+<view class='root' style='background:white;'>
+  <view class='headImg'>
+    <image src='{{headImg}}'></image>
+  </view>
+  <!-- 循环 -->
+  <view style='padding-left:30rpx;padding-right:30rpx;' wx:for="{{travelList}}" wx:key data-id='item.id'>
+    <view class='title'>
+      <text>{{item.id}}.{{item.title}}</text>
+    </view>
+    <view class='msg'>
+        <view class='item' wx:for="{{item.itemList}}" wx:key><text>{{item.msg}}</text></view>
+    </view>
+  </view>
+</view>

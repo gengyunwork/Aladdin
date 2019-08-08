@@ -1,3 +1,13 @@
 <!--pages/home/vipOnly/vipOnly.wxml-->
 <!-- 会员专享 -->
-<text>pages/home/vipOnly/vipOnly.wxml</text>
+<base-top-bar title="会员专享"></base-top-bar>
+<view class='root' style='background:white;'>
+  <view class='headImg'>
+    <image src='{{headImg}}'></image>
+  </view>
+  <!-- 组件 -->
+  <view wx:for="{{items}}" wx:key>
+    <pro-card cardData="{{item}}"></pro-card>
+  </view>
+
+</view>
