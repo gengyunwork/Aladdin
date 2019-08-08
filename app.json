@@ -19,7 +19,8 @@
     "pages/user/vipCenter/vipCenter",
     "pages/user/private/private",
     "pages/user/distribution/distribution",
-    "pages/home/search/search"
+    "pages/home/search/search",
+    "pages/home/travelNote/tips/tips"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,7 +32,7 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "base-top-bar": "/components/BaseTopBar/BaseTopBar",
-    "pro-card":"/components/productCard/card"
+    "pro-card": "/components/productCard/card"
   },
   "tabBar": {
     "color": "#333",

@@ -1,0 +1,70 @@
+<!--pages/home/travelNote/tips/tips.wxml-->
+<swiper class="screen-swiper " style="min-height:240rpx;height:260rpx;" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="scaleToFill"></image>
+  </swiper-item>
+</swiper>
+
+
+<view class="flex  text-lg bg-white">
+  <view class="flex-treble  padding-sm radius">二龙山游记二龙山游记</view>
+  <view class="flex-sub  padding-sm radius flex align-center">
+    <text class="cuIcon-like text-grey margin-lr " bindtap="apreciateTip"></text>
+    <button open-type="share" plain="{{true}}" style="border:0px solid red;">
+      <text class="cuIcon-share text-grey margin-lr" bindtap="shareTip"></text>
+    </button>
+  </view>
+</view>
+
+<view class="flex justify-around bg-white">
+  <view class="flex-treble">
+    <view class="cu-bar" style="min-height:50rpx;">
+      <view class="action">
+        <text class="cuIcon-title text-purple "></text>
+        <text class="grid col-2">
+          <text class="text-sm margin-right-sm"> 出发时间</text>
+        <text class="text-xs text-grey">2019-03-05</text>
+        </text>
+      </view>
+    </view>
+    <view class="cu-bar" style="min-height:50rpx;">
+      <view class="action">
+        <text class="cuIcon-title text-purple "></text>
+        <text class="grid col-2">
+          <text class="text-sm margin-right-sm"> 人数</text>
+        <text class="text-xs text-grey">5人</text>
+        </text>
+      </view>
+    </view>
+    <view class="cu-bar" style="min-height:50rpx;">
+      <view class="action">
+        <text class="cuIcon-title text-purple "></text>
+        <text class="grid col-2">
+          <text class="text-sm margin-right-sm"> 人均消费</text>
+        <text class="text-xs text-grey">126元</text>
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <view class="flex-sub flex justify-center align-center">
+    <view class="pipe "></view>
+  </view>
+
+  <view class="flex align-center justify-center text-lg flex-treble">二龙山</view>
+</view>
+
+<view class="padding text-center bg-white">
+  富文本
+</view>
+
+<view class="bg-white flex justify-between padding-sm">
+  <text>声明此游记著作权归“用户”所有</text>
+  <view>
+    <text class="cuIcon-likefill text-mauve"></text> 3600
+  </view>
+</view>
+
+<view class="end-divider">
+  <text class="padding-sm bg-white" style="z-index:99;">THE END</text>
+</view>

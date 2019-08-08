@@ -20,7 +20,7 @@
   </swiper-item>
 </swiper>
 <!-- 游记卡片 -->
-<view class="flex bg-white p-tb-xs p-lr-sm" wx:for="{{cardList}}">
+<navigator url="/pages/home/travelNote/tips/tips?id={{item.id}}" class="flex bg-white p-tb-xs p-lr-sm" wx:for="{{cardList}}" wx:key="{{item.id}}" >
   <view class="flex-treble  padding-sm">
     <!-- 标题 -->
     <view class="margin-bottom-xs">{{item.title}}</view>
@@ -43,4 +43,4 @@
   <view class="flex-twice  padding-tb-sm padding-lr-xs shadow">
     <image class="response h-100  radius" src="{{item.poster}}"></image>
   </view>
-</view>
+</navigator>
