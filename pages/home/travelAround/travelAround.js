@@ -5,64 +5,57 @@ Page({
    * 页面的初始数据
    */
   data: {
-    headImg: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travelHead.png",
-    travelList: [{
-      id: 1,
-      title: "概况",
-      itemList: [{
-        msg: "一张图玩遍哈尔滨"
-      }, {
-        msg: "必打卡景点"
-      }, {
-        msg: "去二龙山看日出"
-      }, {
-        msg: "热门旅游路线"
-      }]
+    // headImg: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg",
+    cardCur: 0,
+    swiperList: [{
+      id: 0,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
     }, {
-      id:2,
-        title: "娱乐",
-        itemList: [{
-          msg: "冰城特色"
-        }, {
-            msg: "热门电影"
-        }, {
-            msg: "德云社相声"
-        }]
-      }, {
-        id: 3,
-        title: "美食",
-        itemList: [{
-          msg: "冰城美食"
-        }, {
-            msg: "餐厅推荐"
-        }]
-      }, {
-        id: 4,
-        title: "交通",
-        itemList: [{
-          msg: "地铁"
-        }, {
-            msg: "公交"
-        }, {
-            msg: "出租"
-        }]
-      }, {
-        id: 5,
-        title: "购物",
-        itemList: [{
-          msg: "哈尔滨购物指南"
-        }]
-      }, {
-        id: 6,
-        title: "住宿",
-        itemList: [{
-          msg: "哈尔滨住宿指南"
-        }, {
-            msg: "热门住宿区域"
-        }]
-      }]
+      id: 1,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg',
+    }, {
+      id: 2,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
+    }, {
+      id: 3,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
+    }],
+    items: [{
+      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
+      place: "福建",
+      title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
+      toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
+      keyList: ["爆款", "爆款", "爆款"],
+      num: "170",
+      price_vip: "1.00",
+      price: "30.00",
+      goods_id: "1",
+    }, {
+      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
+      place: "福建",
+      title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
+      toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
+      keyList: ["爆款", "爆款", "爆款"],
+      num: "170",
+      price_vip: "1.00",
+      price: "30.00",
+      goods_id: "2",
+    }, {
+      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
+      place: "福建",
+      title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
+      toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
+      keyList: ["爆款", "爆款", "爆款"],
+      num: "170",
+      price_vip: "10.00",
+      price: "30.00",
+      goods_id: "3",
+    }]
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -73,8 +66,13 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
-
+  onReady: function() {},
+  linkToCommodity(e) {
+    console.log(e.detail)
+    // goods_id 商品id link_id 1 为周边游 2 为会员专享
+    wx.navigateTo({
+      url: '../commodity/index?goods_id=' + e.detail + '&link_id=1',
+    })
   },
 
   /**

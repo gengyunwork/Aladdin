@@ -1,17 +1,20 @@
 <!--pages/home/travelAround/travelAround.wxml-->
 <!-- 周边游 -->
 <base-top-bar title="周边游"></base-top-bar>
-<view class='root' style='background:white;'>
-  <view class='headImg'>
-    <image src='{{headImg}}'></image>
+<view class='root' style='background:white'>
+  <!-- 轮播 -->
+  <!-- <image src='{{headImg}}'></image> -->
+  <view style='margin-bottom: 20rpx;'>
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key style="width:100%;height:260rpx;margin-bottom: 20rpx;">
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </swiper-item>
+    </swiper>
   </view>
-  <!-- 循环 -->
-  <view style='padding-left:30rpx;padding-right:30rpx;' wx:for="{{travelList}}" wx:key data-id='item.id'>
-    <view class='title'>
-      <text>{{item.id}}.{{item.title}}</text>
-    </view>
-    <view class='msg'>
-        <view class='item' wx:for="{{item.itemList}}" wx:key><text>{{item.msg}}</text></view>
-    </view>
+
+  <!-- 组件 -->
+  <view wx:for="{{items}}" wx:key>
+    <pro_card cardData="{{item}}" skin="2" id="proCard"  bind:click_card="linkToCommodity" ></pro_card>
   </view>
 </view>

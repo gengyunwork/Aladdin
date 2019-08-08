@@ -36,7 +36,7 @@
       <!-- 卡片按钮导航 -->
       <view class="cu-list menu-avatar grid col-4 padding-top-sm">
 
-        <view wx:for="{{item.tourList}}" wx:for-item="card" class="flex-direction text-center" style="height:140rpx;">
+        <view wx:for="{{item.tourList}}" wx:for-item="card" class="flex-direction text-center" style="height:140rpx;" wx:key>
           <view class="cu-avatar radius" style="background-image:url({{card.imgUrl}});"></view>
           <view>
             {{card.text}}

@@ -68,7 +68,7 @@
   line-height: 32rpx;
   margin-right: 20rpx;
 }
-.showMan {
+.showMan1 ,.showMan2{
   float: left;
   margin-left: 10rpx;
   margin-top: 20rpx;
@@ -79,6 +79,9 @@
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: space-between;
+}
+.showMan2 {
+  align-items: baseline;
 }
 .showBtn {
   width: 160rpx;
