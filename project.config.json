@@ -39,12 +39,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": 0,
 					"name": "classify",
 					"pathName": "pages/classify/classify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "游记攻略",
+					"pathName": "pages/home/travelNote/note",
 					"query": "",
 					"scene": null
 				}

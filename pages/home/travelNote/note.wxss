@@ -1,1 +1,9 @@
 /* pages/home/travelNote/note.wxss */
+.note-swiper{
+  height: 340rpx !important;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.note-swiper swiper-item{
+  height: 340rpx !important;
+  padding: 0rpx 12rpx;
+}
