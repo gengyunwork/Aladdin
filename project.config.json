@@ -57,8 +57,8 @@
 				},
 				{
 					"id": 2,
-					"name": "pages/home/travelNote/note",
-					"pathName": "pages/home/travelNote/note",
+					"name": "pages/home/travelNote/write/write",
+					"pathName": "pages/home/travelNote/write/write",
 					"query": "",
 					"scene": null
 				}

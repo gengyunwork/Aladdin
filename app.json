@@ -34,11 +34,7 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "base-top-bar": "/components/BaseTopBar/BaseTopBar",
-<<<<<<< HEAD
-    "pro-card": "/components/productCard/card"
-=======
     "pro_card": "/components/productCard/card"
->>>>>>> 2e1ae032664f5fa867fd661e695e3970b490d240
   },
   "tabBar": {
     "color": "#333",
