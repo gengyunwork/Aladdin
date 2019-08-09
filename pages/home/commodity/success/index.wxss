@@ -1,0 +1,43 @@
+/* pages/home/commodity/success/index.wxss */
+.headImg {
+  width: 264rpx;
+  height: 264rpx;
+  padding-top: 50rpx;
+  margin: 0 auto;
+
+}
+.headText {
+  font-size: 36rpx;
+  margin-top: 37rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Light;
+}
+.body {
+  padding:0 128rpx ;
+  margin-top: 28rpx;
+  font-size: 28rpx;
+  line-height: 42rpx;
+} 
+.goods_date {
+  margin-top: 26rpx;
+}
+.foot {
+  padding: 0 80rpx;
+  margin-top: 57rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+} 
+.btn1 ,.btn2 {
+  width: 252rpx;
+  height: 65rpx;
+  border: 1rpx solid #992ED5;
+  color: #992ED5;
+  text-align: center;
+  line-height: 65rpx;
+  border-radius: 33rpx;
+}
+.btn2 {
+  border: 1rpx solid #6FC7FA;
+  color: #6FC7FA;
+}

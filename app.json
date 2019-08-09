@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/home/shareMoney/shareMoney",
     "pages/home/home",
+    "pages/home/commodity/success/index",
     "pages/home/commodity/index",
     "pages/home/travelAround/travelAround",
     "pages/home/vipOnly/vipOnly",
     "pages/classify/classify",
     "pages/tickets/tickets",
     "pages/user/user",
-    "pages/home/shareMoney/shareMoney",
     "pages/home/bargain/bargain",
     "pages/home/applyVip/apply",
     "pages/home/applyPartner/partner",
@@ -23,6 +24,7 @@
     "pages/home/search/search",
     "pages/home/travelNote/tips/tips",
     "pages/home/travelNote/write/write"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,11 +36,7 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "base-top-bar": "/components/BaseTopBar/BaseTopBar",
-<<<<<<< HEAD
-    "pro-card": "/components/productCard/card"
-=======
     "pro_card": "/components/productCard/card"
->>>>>>> 2e1ae032664f5fa867fd661e695e3970b490d240
   },
   "tabBar": {
     "color": "#333",

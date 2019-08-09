@@ -8,6 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // user_type 1 为会员 0 为非会员
+    user_type : 1,
     goods_id: '',
     link_id: "",
     cardCur: 0,
@@ -106,6 +108,29 @@ Page({
     // console.log(this.collected)
     this.setData ({
       collected: !e.currentTarget.dataset.collected,
+    })
+  },
+  //点击弹出框
+  showModal(e) {
+    this.setData({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
+  },
+  //会员点击确定 跳转领取成功
+  linkToSuccess(e) {
+    wx.navigateTo({
+      url: 'success/index',
+    })
+  },
+  //非会员点击确定 跳转申请会员页
+  linkToApplyVip(e) {
+    wx.navigateTo({
+      url: '../applyVip/apply',
     })
   },
   

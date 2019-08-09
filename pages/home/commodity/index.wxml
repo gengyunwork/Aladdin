@@ -26,8 +26,13 @@
       <view class='com-ps'>{{ps}}</view>
       <view class='com-others'>
         <view class='com-price'>
-          <text class='com-price1'>￥{{price1}}</text>
-          <text class='com-price2'>￥{{price2}}会员价</text>
+          <view wx:if="{{link_id ==1}}">
+            <text class='com-price1'>￥{{price1}}</text>
+            <text class='com-price2'>￥{{price2}}会员价</text>
+          </view>
+          <view wx:if="{{link_id ==2}}" style='color:#E71515;font-size:30rpx;padding: 10rpx 0rpx;'>
+            免费领取
+          </view>
         </view>
         <text class='com-num'>{{num}}人购买</text>
       </view>
@@ -93,7 +98,47 @@
       <view class="action" wx:else catchtap='onCollectionTap' data-collected='{{collected}}'>
         <view class="cuIcon-favorfill"></view> 收藏
       </view>
-      <view class="bg-red submit">立即订购</view>
+      <view class="bg-red submit" wx:if="{{link_id ==1}}">立即订购</view>
+      <!-- 会员 -->
+      <view class="bg-red submit" wx:if="{{link_id ==2&& user_type == 1}}" bindtap="showModal" data-target="Modal">立即领取</view>
+      <!-- 非会员 -->
+      <view class="bg-red submit" wx:if="{{link_id ==2&& user_type == 0}}" bindtap="showModal" data-target="Image">立即领取</view>
+    </view>
+  </view>
+
+  <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="cu-bar bg-white justify-end">
+        <view class="content">领取通知</view>
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close text-red"></text>
+        </view>
+      </view>
+      <view class="padding-xl">
+        <view style='border-bottom:1rpx solid rgba(221,221,221,1);'>
+          1.领取通知领取通知领取通知领取通1.领取通知领取通知领取通知领取通1.领取通知领取通知领取通知领取通1.领取通知领取通知领取通知领取通1.领取通知领取通知领取通知领取通1.领取通知领取通知领取通知领取通
+        </view>
+        <view class='toastBtn' bindtap='linkToSuccess'>确定</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-modal {{modalName=='Image'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:200px;">
+        <view class="cu-bar justify-end text-white">
+          <view class="action" bindtap="hideModal">
+            <text class="cuIcon-close "></text>
+          </view>
+        </view>
+      </view>
+      <view class="cu-bar bg-white">
+        <view class="action margin-0 flex-sub  solid-left" >
+          <view class="toastBtn2" bindtap='linkToApplyVip'>
+            成为会员
+          </view>
+        </view>
+      </view>
     </view>
   </view>
 

@@ -3,11 +3,14 @@
 @component params
         @cardData { Object } 
           
-          @样式1 skin=1
+          @样式1 skin=1 会员专享
           @数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 已售人数,goods_id 商品id}
 
-          @样式2 skin=2
+          @样式2 skin=2 周边游
           @数据{img 图片,place 地点,title 标题,toast 详情,keyList 小卡片,num 购买人数 ,price_vip 会员价, price正常价，goods_id 商品id}
+
+          @样式3 skin=3 分享赚钱 type=1 合伙人（可分享） type=0 非合伙人（不可分享）
+          @数据{img 图片,place 地点,title 标题,toast 详情,price 佣金}
   -->
 
 
@@ -28,8 +31,8 @@
 
     <!-- skin=1 -->
     <view class='showMan1' wx:if="{{skin == 1}}">
-        <text>已售{{cardData.num}}人</text>
-        <view class='showBtn'>免费领取</view>
+      <text>已售{{cardData.num}}人</text>
+      <view class='showBtn' catchtap='click_btn' data-id="{{cardData.goods_id}}">免费领取</view>
     </view>
     <!-- skin=2 -->
     <view class='showMan2' wx:if="{{skin == 2}}">
@@ -37,7 +40,18 @@
       <text style='color:#E71515;font-size:22rpx;'>￥{{cardData.price_vip}}会员价</text>
       <text style='font-size:32rpx;color:#333333'>￥{{cardData.price}}</text>
     </view>
+    <!-- skin=3 -->
+    <view class='showMan3' wx:if="{{skin == 3}}">
+      <text>佣金：￥{{cardData.price}}</text>
+      <!-- type 为1 可分享 -->
+      <view style='width:35rpx;height:35rpx;' wx:if="{{type == 1}}" catchtap='click_share1' data-id='{{cardData.goods_id}}'>
+        <image src="{{shareImg}}"></image>
+      </view>
+      <!-- type 为2 不可分享 -->
+      <view style='width:35rpx;height:35rpx;' wx:if="{{type == 0}}" catchtap='click_share0'>
+        <image src="{{shareImg}}"></image>
+      </view>
+    </view>
   </view>
-
   <view style='clear:both'></view>
 </view>

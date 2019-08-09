@@ -16,6 +16,21 @@
   font-size: 18rpx;
 }
 
+#root .cu-dialog {
+  width: 540rpx;
+}
+
+.cu-modal .padding-xl {
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.cu-modal .cu-bar {
+  min-height: 70rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+}
+
 .ensureList {
   display: flex;
   flex-flow: row nowrap;
@@ -177,4 +192,25 @@
   background: rgba(159, 52, 218, 1);
   border-radius: 26rpx;
   margin: 30rpx;
+}
+
+.toastBtn {
+  height: 72rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 32rpx;
+  color: #9828d7;
+}
+
+.toastBtn2 {
+  height: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  border: 3rpx solid rgba(155, 48, 214, 1);
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  width: 360rpx;
+  color: #9b30d6;
+  font-size: 36rpx;
 }

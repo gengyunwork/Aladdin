@@ -1,3 +1,51 @@
 <!--pages/home/shareMoney/shareMoney.wxml-->
 <!-- 分享赚钱 -->
-<text>pages/home/shareMoney/shareMoney.wxml</text>
+<base-top-bar title="分享赚钱"></base-top-bar>
+<view style='backgrounnd:white;'>
+  <view class='headImg'>
+    <image src='{{headImg}}'></image>
+  </view>
+  <!-- 组件 -->
+  <view wx:for="{{items}}" wx:key style='background:white;'>
+    <!-- type 为0 非合伙人 为1 合伙人 -->
+    <pro_card cardData="{{item}}" skin="3" type="0" bind:click_share1="showModal1" data-target1="bottomModal" bind:click_share0="showModal2" data-target2="Image"></pro_card>
+  </view>
+  <!-- 用户为合伙人点击分享按钮 底部弹出 -->
+  <view class='isPartner'>
+    <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+      <view class="cu-dialog">
+        <view class="cu-bar bg-white">
+          <view class="action text-blue" bindtap="hideModal">取消</view>
+        </view>
+        <view class="padding-xl">
+          <view class='chooseBar' wx:for="{{chooseBar}}" :key>
+            <view style='width:100rpx;height:100rpx;'>
+              <image src='{{item.img}}'></image>
+            </view>
+            <view style='margin-top:22rpx'>{{item.text}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 用户为非合伙人点击分享按钮 弹出 -->
+  <view class='notPartner'>
+    <view class="cu-modal {{modalName=='Image'?'show':''}}">
+      <view class="cu-dialog">
+        <view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:200px;">
+          <view class="cu-bar justify-end text-white">
+            <view class="action" bindtap="hideModal">
+              <text class="cuIcon-close "></text>
+            </view>
+          </view>
+        </view>
+        <view class="cu-bar bg-white">
+          <view class="action margin-0 flex-sub  solid-left">
+            <view class='toastBtn' bindtap='linkToApplyPartner'>成为合伙人</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/home/commodity/success/index.wxml-->
+<base-top-bar title="领取成功"></base-top-bar>
+<view style='background:white;width:100%;'>
+  <view class='headImg'>
+
+    <image src="{{img}}"></image>
+  </view>
+  <view class='headText'>领取成功</view>
+  <view class='body'>
+    <view class='goods_name'>商品名称:{{goods_name}}</view>
+    <view class='goods_date'>有效期  :{{goods_date}}个月</view>
+  </view>
+  <view class='foot'>
+    <view class='btn1' bindtap='linkToHome'>继续购物</view>
+    <view class='btn2' bindtap='linkToOrder'>查看订单</view>
+  </view>
+</view>

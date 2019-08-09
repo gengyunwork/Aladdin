@@ -68,8 +68,7 @@
   line-height: 32rpx;
   margin-right: 20rpx;
 }
-.showMan1 ,.showMan2{
-  float: left;
+.showMan1 ,.showMan2 ,.showMan3{
   margin-left: 10rpx;
   margin-top: 20rpx;
   font-size: 20rpx;
@@ -83,6 +82,9 @@
 .showMan2 {
   align-items: baseline;
 }
+.showMan3 {
+ padding: 10rpx;
+}
 .showBtn {
   width: 160rpx;
   height: 40rpx;
@@ -91,4 +93,8 @@
   border: 1rpx solid #9F34DA;
   color: #9F34DA;
   border-radius:6rpx;
+}
+.showMan3 text {
+  font-size: 28rpx;
+  color: #E71827;
 }

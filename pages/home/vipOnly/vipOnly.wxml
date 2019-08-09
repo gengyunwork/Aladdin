@@ -7,7 +7,7 @@
   </view>
   <!-- 组件 -->
   <view wx:for="{{items}}" wx:key>
-    <pro_card cardData="{{item}}" skin="1"></pro_card>
+    <pro_card cardData="{{item}}" skin="1" bind:click_btn="linkToCommodity"></pro_card>
   </view>
 
 </view>
