@@ -1,2 +1,56 @@
 <!--pages/home/travelNote/write/write.wxml-->
-<text>pages/home/travelNote/write/write.wxml</text>
+<base-top-bar title="{{showBaseEditor?'填写基础信息':'发表游记'}}" isBack="{{showBaseEditor?false:true}}"></base-top-bar>
+<view class="response bg-white" style="height:100vh;">
+  <view class="bg-img flex justify-center align-center" style="background-image: url('https://hbimg.huabanimg.com/3df17fd28b4984c284df4046038ed7e9365d810040f26-Xiimug_fw658');height: 300rpx;">
+    <view class="padding-lr-xl text-white radius" style="background-color:rgba(0,0,0,.5);">
+      <view class="padding-xs text-xl">
+        更换封面
+      </view>
+    </view>
+  </view>
+  <view class="padding-sm solids-bottom bg-white text-grey" bindtap="editBaseMsg">
+    <view>出发日期{{date}}</view>
+    <view class="flex justify-between">
+      <text>目的地：{{dest}}</text>
+      <text>人数：{{people}}</text>
+      <text>消费：{{average}}</text>
+    </view>
+  </view>
+  <view class="cu-form-group padding-sm bg-white text-xl solids-bottom">
+    <input placeholder="标题" value="{{title}}"  bindinput="titleChange"></input>
+  </view>
+  <editor id="editor" class="ql-container padding-sm" placeholder="请分享这一次的旅行" showImgSize showImgToolbar showImgResize bindready="onEditorReady" style="min-height:50vh;">
+  </editor>
+  <view class="padding-sm flex justify-between bg-white solid-top response" style="position:fixed;bottom:0;">
+    <text class="cuIcon-pic" style="font-size:46rpx;" bindtap="insertImage"></text>
+    <button class="cu-btn round bg-mauve shadow" bindtap="publish">发表</button>
+  </view>
+</view>
+
+<view class="edit-box {{showBaseEditor?'show':''}}">
+  <form>
+    <view class="cu-form-group">
+      <view class="title">日期选择</view>
+      <picker style="height: 60rpx;" mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">人数</view>
+      <input placeholder="{{people}}" value="{{people}}" bindinput="peopleChange"></input>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">人均消费</view>
+      <input placeholder="{{average}}" value="{{average}}"  bindinput="averageChange"></input>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">旅游地点</view>
+      <input placeholder="{{dest}}" value="{{dest}}"  bindinput="destChange"></input>
+    </view>
+  </form>
+  <view class="padding-sm flex justify-end bg-white solid-top response" style="position:absolute;bottom:0;right:0;">
+    <button class="cu-btn round bg-mauve shadow" bindtap="confirm">继续编辑</button>
+  </view>
+</view>

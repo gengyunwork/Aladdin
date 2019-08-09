@@ -511,23 +511,23 @@ checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input
 }
 
 .solids::after {
-  border: 8rpx solid #eee;
+  border: 16rpx solid #eee;
 }
 
 .solids-top::after {
-  border-top: 8rpx solid #eee;
+  border-top: 16rpx solid #eee;
 }
 
 .solids-right::after {
-  border-right: 8rpx solid #eee;
+  border-right: 16rpx solid #eee;
 }
 
 .solids-bottom::after {
-  border-bottom: 8rpx solid #eee;
+  border-bottom: 16rpx solid #eee;
 }
 
 .solids-left::after {
-  border-left: 8rpx solid #eee;
+  border-left: 16rpx solid #eee;
 }
 
 /* -- 虚线 -- */

@@ -1,1 +1,28 @@
 /* pages/home/travelNote/write/write.wxss */
+
+.edit-box{
+  width: 100vw;
+  height: calc(100vh - 128rpx);
+  background: white;
+  padding: 22rpx;
+  position: fixed;
+  top:128rpx;
+  left:-100vw;
+  transition: left .5s;
+}
+
+.edit-box.show{
+  left:0;
+}
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+
+.edit-box .cu-form-group .picker{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align:left;
+}
+.edit-box .cu-form-group picker::after{
+  line-height: 60rpx;
+}
