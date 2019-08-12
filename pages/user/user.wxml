@@ -47,7 +47,7 @@
     <image class="icon margin-bottom-xs" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/message.png"></image>
     <text>消息通知</text>
   </navigator>
-  <navigator url="/pages/user/distribute/distribute" class="padding flex align-center flex-direction">
+  <navigator url="/pages/user/distribution/distribution" class="padding flex align-center flex-direction">
     <image class="icon margin-bottom-xs" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/distribute.png"></image>
     <text>分销中心</text>
   </navigator>

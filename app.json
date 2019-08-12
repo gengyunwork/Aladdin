@@ -23,8 +23,10 @@
     "pages/user/distribution/distribution",
     "pages/home/search/search",
     "pages/home/travelNote/tips/tips",
-    "pages/home/travelNote/write/write"
-    
+    "pages/home/travelNote/write/write",
+    "pages/user/distribution/brokerage/brokerage",
+    "pages/user/distribution/withdraw/withdraw",
+    "pages/user/distribution/wdSuccess/wdSuccess"
   ],
   "window": {
     "backgroundTextStyle": "light",

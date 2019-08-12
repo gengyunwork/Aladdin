@@ -1,1 +1,16 @@
 /* pages/user/distribution/distribution.wxss */
+
+.label {
+  font-size: 24rpx;
+  color: #232323;
+}
+
+.dis-icon{
+  height: 48rpx;
+  width: 48rpx;
+}
+.dis-icon--s{
+  height: 36rpx !important;
+  width: 36rpx !important;
+  margin-right: 18rpx !important;
+}

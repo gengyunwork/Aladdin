@@ -1,0 +1,22 @@
+/* pages/user/distribution/withdraw/withdraw.wxss */
+.user-pane{
+  width: 100vw;
+  height: 150rpx;
+  position: relative;
+}
+
+.user-pane .bg{
+  position: absolute !important;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.withdraw-field{
+  border-top:8rpx solid #f5f5f5;
+  border-bottom:12rpx solid #f5f5f5;
+  padding:12rpx 24rpx;
+  margin-top:20rpx;
+}
