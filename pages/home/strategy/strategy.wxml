@@ -6,12 +6,12 @@
     <image src='{{headImg}}'></image>
   </view>
   <!-- 循环 -->
-  <view style='padding-left:30rpx;padding-right:30rpx;' wx:for="{{travelList}}" wx:key data-id='item.id'>
+  <view style='padding-left:30rpx;padding-right:30rpx;' wx:for="{{travelList}}" wx:key  >
     <view class='title'>
       <text>{{item.id}}.{{item.title}}</text>
     </view>
-    <view class='msg'>
-        <view class='item' wx:for="{{item.itemList}}" wx:key><text>{{item.msg}}</text></view>
+    <view class='msg' >
+        <view class='item' wx:for="{{item.itemList}}" wx:key data-id='{{item.title_id}}'  bindtap='linkToDetails' ><text>{{item.msg}}</text></view>
     </view>
   </view>
 </view>

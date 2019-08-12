@@ -1,7 +1,13 @@
 {
   "pages": [
-    "pages/home/shareMoney/shareMoney",
     "pages/home/home",
+    "pages/user/order/details/index",
+    "pages/user/order/order",
+    "pages/home/strategy/details/index",
+    "pages/home/strategy/strategy",
+    "pages/home/applyVip/vip",
+    "pages/home/applyPartner/index",
+    "pages/home/shareMoney/shareMoney",
     "pages/home/commodity/success/index",
     "pages/home/commodity/index",
     "pages/home/travelAround/travelAround",
@@ -10,11 +16,7 @@
     "pages/tickets/tickets",
     "pages/user/user",
     "pages/home/bargain/bargain",
-    "pages/home/applyVip/apply",
-    "pages/home/applyPartner/partner",
     "pages/home/travelNote/note",
-    "pages/home/strategy/strategy",
-    "pages/user/order/order",
     "pages/user/favorite/favorite",
     "pages/user/note/note",
     "pages/user/message/message",
@@ -24,7 +26,6 @@
     "pages/home/search/search",
     "pages/home/travelNote/tips/tips",
     "pages/home/travelNote/write/write"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",

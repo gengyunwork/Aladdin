@@ -1,0 +1,27 @@
+/* pages/applyPartner/index.wxss */
+
+.body {
+  font-size: 36rpx;
+  padding: 30rpx 50rpx;
+  font-weight: 600;
+}
+
+.footTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bottomBar {
+  width: 100%;
+  height: 98rpx;
+  background: #992ed5;
+  color: white;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 98rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

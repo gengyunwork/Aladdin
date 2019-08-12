@@ -1,0 +1,23 @@
+<!--pages/home/strategy/details/index.wxml-->
+<!-- 概况 -->
+<base-top-bar title="概况"></base-top-bar>
+<view style='background:white;'>
+  <view class="headTitle">
+    <text>{{title}}</text>
+  </view>
+  <view class="generalBar" wx:for="{{generalList}}" :key>
+    <view style='padding: 0 30rpx;'>
+      <view class="title">
+        <view style="width:10rpx;height:10rpx;">
+          <image src="{{icon}}"></image>
+        </view>
+        <view style="margin-left:15rpx;">{{item.title}}</view>
+      </view>
+      <view style="padding: 0 20rpx;margin-top:17rpx;font-size:28rpx;padding-bottom:11rpx;">{{item.content}}</view>
+    </view>
+    <!-- 调用组件 -->
+    <view style='border:1rpx solid #f5f5f5;padding-top:10rpx;'>
+      <pro_card cardData="{{item.cardMsg}}" skin="4"></pro_card>
+    </view>
+  </view>
+</view>

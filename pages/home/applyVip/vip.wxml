@@ -1,0 +1,26 @@
+<!--pages/applyVip/vip.wxml-->
+<base-top-bar title="申请会员"></base-top-bar>
+<view style='background:white;'>
+  <view style="width:100%;height:260rpx;background:#F5F5F5"></view>
+  <view class="vipCard">
+    <image src="{{cardImg}}" style="width:100%;height:100%;border-radius: 30rpx;"></image>
+    <view class="vipTime" wx:if="{{id==1}}">剩余天数: {{date}}天</view>
+    <view class="vipShow">会员专享</view>
+    <view class="vipMember" wx:if="{{id==1}}">已成为阿拉丁会员</view>
+    <view class="vipMember" wx:if="{{id==0}}">加入阿拉丁会员</view>
+  </view>
+  <view class="vipBar">
+    <view class="vipItem" wx:for="{{vipLists}}" :key>
+      <view style="width:46rpx;height:40rpx;margin:0 auto;">
+        <image src="{{item.icon}}" style="width:100%;height:100%;"></image>
+      </view>
+      <view class="vipText">{{item.text}}</view>
+    </view>
+  </view>
+  <view style="padding: 0 30rpx;">
+    <view class="vipToast">
+      <view class="vipMessage">阿拉丁会员说明</view>
+      <view class="vipPs">{{ps}}</view>
+    </view>
+  </view>
+</view>

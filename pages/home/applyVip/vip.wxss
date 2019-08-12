@@ -1,0 +1,76 @@
+/* pages/applyVip/vip.wxss */
+
+.vipCard {
+  width: 92%;
+  height: 340rpx;
+  margin-left: 4%;
+  margin-top: -220rpx;
+  position: relative;
+}
+
+.vipTime {
+  position: absolute;
+  top: 84rpx;
+  left: 11rpx;
+  color: #fdb53b;
+  font-size: 20rpx;
+}
+
+.vipShow {
+  position: absolute;
+  top: 43rpx;
+  right: 0;
+  background: #f4a022;
+  border-radius: 30rpx 0 0 30rpx;
+  width: 122rpx;
+  height: 44rpx;
+  color: white;
+  text-align: center;
+  line-height: 44rpx;
+  font-size: 26rpx;
+}
+
+.vipMember {
+  width: 53.2%;
+  height: 58rpx;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c5a162), color-stop(1, #ae8e4c));
+  border-radius: 30rpx;
+  color: white;
+  text-align: center;
+  line-height: 58rpx;
+  font-size: 26rpx;
+  position: absolute;
+  left: 23.5%;
+  top: 204rpx;
+}
+.vipBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx ;
+}
+.vipItem {
+  height: 155rpx;
+  padding: 35rpx 0 ;
+  text-align: center;
+}
+.vipText {
+  color: #666666;
+  font-size: 24rpx;
+  margin-top: 22rpx;
+}
+.vipToast {
+  padding: 30rpx 20rpx;
+  background: #F5F5F5;
+  text-align: center;
+}
+.vipMessage {
+  font-size: 28rpx;
+}
+.vipPs {
+  font-size: 24rpx;
+  line-height: 42rpx;
+  color: #666666;
+  margin-top: 40rpx;
+}

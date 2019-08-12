@@ -10,64 +10,84 @@ Page({
       id: 1,
       title: "概况",
       itemList: [{
-        msg: "一张图玩遍哈尔滨"
+        msg: "一张图玩遍哈尔滨",
+        title_id: 1
       }, {
-        msg: "必打卡景点"
+        msg: "必打卡景点",
+        title_id: 2
       }, {
-        msg: "去二龙山看日出"
+        msg: "去二龙山看日出",
+        title_id: 3
       }, {
-        msg: "热门旅游路线"
+        msg: "热门旅游路线",
+        title_id: 4
       }]
     }, {
       id: 2,
       title: "娱乐",
       itemList: [{
-        msg: "冰城特色"
+        msg: "冰城特色",
+        title_id: 5
       }, {
-        msg: "热门电影"
+        msg: "热门电影",
+        title_id: 6
       }, {
-        msg: "德云社相声"
+        msg: "德云社相声",
+        title_id: 7
       }]
     }, {
       id: 3,
       title: "美食",
       itemList: [{
-        msg: "冰城美食"
+        msg: "冰城美食",
+        title_id: 8
       }, {
-        msg: "餐厅推荐"
+        msg: "餐厅推荐",
+        title_id: 9
       }]
     }, {
       id: 4,
       title: "交通",
       itemList: [{
-        msg: "地铁"
+        msg: "地铁",
+        title_id: 10
       }, {
-        msg: "公交"
+        msg: "公交",
+        title_id: 11
       }, {
-        msg: "出租"
+        msg: "出租",
+        title_id: 12
       }]
     }, {
       id: 5,
       title: "购物",
       itemList: [{
-        msg: "哈尔滨购物指南"
+        msg: "哈尔滨购物指南",
+        title_id: 13
       }]
     }, {
       id: 6,
       title: "住宿",
       itemList: [{
-        msg: "哈尔滨住宿指南"
+        msg: "哈尔滨住宿指南",
+        title_id: 14
       }, {
-        msg: "热门住宿区域"
+        msg: "热门住宿区域",
+        title_id: 15
       }]
     }]
   },
-
+  linkToDetails:function(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({
+      url: '../strategy/details/index?title_id=' + e.currentTarget.dataset.id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    
   },
 
   /**

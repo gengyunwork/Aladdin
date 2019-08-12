@@ -11,6 +11,12 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  linkToPartner:function(){
+    wx.navigateTo({
+      url: "../home/applyPartner/index",
+    })
+  },
+  
   onLoad: function (options) {
 
   },
