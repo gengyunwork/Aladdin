@@ -1,0 +1,10 @@
+<!--pages/user/distribution/wdSuccess/wdSuccess.wxml-->
+<base-top-bar isBack="{{false}}" title="提现成功"></base-top-bar>
+<view class=" padding text-center" style="margin-top:100rpx;">
+  <text class="cuIcon-roundcheck text-blue" style="font-size:250rpx;"></text>
+  <view class="margin">提现成功</view>
+  <view class="text-sm"  style="color:#999;">我们将在三个工作日内处理您的订单</view>
+  <view class="text-center margin-top-xl">
+    <button class="cu-btn bg-blue radius padding" style="width:70%;" bindtap="backHome">完成</button>
+  </view>
+</view>

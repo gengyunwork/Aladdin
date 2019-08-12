@@ -9,6 +9,7 @@
   top:128rpx;
   left:-100vw;
   transition: left .5s;
+  z-index:999;
 }
 
 .edit-box.show{

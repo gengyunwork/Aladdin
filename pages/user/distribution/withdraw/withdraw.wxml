@@ -1,0 +1,43 @@
+<!--pages/user/distribution/withdraw/withdraw.wxml-->
+<base-top-bar title="提现"></base-top-bar>
+<view class="user-pane flex align-center text-white">
+  <image class="bg" src="../../../../images/distribution/bg01.png"></image>
+  <view class="cu-avatar lg round margin-left" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);"></view>
+  <view class="margin-left">
+    <view class=" text-lg">李若云</view>
+    <view>
+      <image src="../../../../images/distribution/medal.png" style="width:36rpx;height:36rpx;vertical-align:middle;"></image>
+      <text class="margin-left-xs">可提现金额（元）380</text>
+    </view>
+  </view>
+</view>
+
+<view class="withdraw-field bg-white">
+  <form>
+    <view class="text-lg">提现金额</view>
+    <view class="cu-form-group padding-lr-0">
+      <image style="width:66rpx;height:36rpx;" src="../../../../images/distribution/money3.png" class="title"></image>
+      <input placeholder="输入提现金额" type="number" value="{{cash}}" bindinput="cashChange"></input>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-yellow text-white" bindtap="withdrawTotal">
+          全部
+        </view>
+      </view>
+    </view>
+    <text style="color:#999;">温馨提示：佣金满100元才可提现</text>
+  </form>
+</view>
+
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <image src="../../../../images/distribution/wechat.png" style="width:48rpx;height:48rpx;margin-right:16rpx;"></image>微信
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-white">提现至</button>
+  </view>
+</view>
+
+<view class="text-center margin-top-xl">
+  <button class="cu-btn bg-mauve radius padding" style="width:70%;" bindtap="confirm">申请提现</button>
+</view>
