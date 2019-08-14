@@ -1,3 +1,29 @@
 <!--pages/user/favorite/favorite.wxml-->
 <!-- 我的收藏 -->
-<text>pages/user/favorite/favorite.wxml</text>
+<base-top-bar title="我的收藏"></base-top-bar>
+<view class="padding-top bg-white">
+  <pro_card cardData="{{item}}" skin="2" id="proCard" data-id="{{item.id}}" bindlongtap="delProduct" bind:click_card="linkToCommodity" wx:for="{{favoriteList}}" wx:key="goods_id"></pro_card>
+</view>
+
+<view style="border:2rpx solid #eee;"></view>
+<note-card wx:for="{{noteList}}" wx:key="id" data="{{item}}" data-id="{{item.id}}" reverse="{{true}}" bindlongtap="delNote"></note-card>
+
+<view class="cu-modal {{showModal?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Modal标题</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

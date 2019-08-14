@@ -20,27 +20,5 @@
   </swiper-item>
 </swiper>
 <!-- 游记卡片 -->
-<navigator url="/pages/home/travelNote/tips/tips?id={{item.id}}" class="flex bg-white p-tb-xs p-lr-sm" wx:for="{{cardList}}" wx:key="{{item.id}}" >
-  <view class="flex-treble  padding-sm">
-    <!-- 标题 -->
-    <view class="margin-bottom-xs">{{item.title}}</view>
-    <!-- 用户头像及昵称 -->
-    <view class=" margin-bottom-xs">
-      <view class="cu-avatar sm round margin-right-xs" style="background-image:url({{item.avatar}});"></view>
-      <text>{{item.alias}}</text>
-    </view>
-    <!-- 点赞数 浏览量 发布时间 -->
-    <view class="grid col-2 flex align-center text-gray" style="font-size:22rpx;">
-      <view>
-        <text class="cuIcon-appreciate lg  margin-right-xs"></text>
-        <text>{{item.appreciate}}</text>
-        <text class="cuIcon-attention  margin-lr-xs"></text>
-        <text>{{item.attention}}</text>
-      </view>
-      <text>发布时间:{{item.create_at}}</text>
-    </view>
-  </view>
-  <view class="flex-twice  padding-tb-sm padding-lr-xs shadow">
-    <image class="response h-100  radius" src="{{item.poster}}"></image>
-  </view>
-</navigator>
+
+<note-card wx:for="{{cardList}}" wx:key="id" data="{{item}}"></note-card>

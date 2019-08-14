@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -64,8 +64,15 @@
 				},
 				{
 					"id": 3,
-					"name": "pages/user/note/detail/detail",
-					"pathName": "pages/user/note/detail/detail",
+					"name": "pages/home/travelNote/note",
+					"pathName": "pages/home/travelNote/note",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/favorite/favorite",
+					"pathName": "pages/user/favorite/favorite",
 					"query": "",
 					"scene": null
 				}
