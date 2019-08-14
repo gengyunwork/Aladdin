@@ -1,4 +1,4 @@
-// pages/user/note/note.js
+// pages/user/note/detail/detail.js
 Page({
 
   /**
@@ -7,33 +7,44 @@ Page({
   data: {
     swiperList: [{
       id: 0,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
     }, {
       id: 1,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
     }, {
       id: 2,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
     }, {
       id: 3,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
     }, {
       id: 4,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
     }, {
       id: 5,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
     }, {
       id: 6,
-      title:"我的二龙山",
+      type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
+    articalData: {
+      id: 1,
+      title: "二龙山游记",
+      appreciateNum: 3600,
+      create_at: "2019-06-26",
+      peopleNum: 5,
+      average: 126,
+      position: "二龙山",
+      richerText: "",
+      user: "李晓云"
+    }
   },
 
   /**
@@ -42,7 +53,15 @@ Page({
   onLoad: function (options) {
 
   },
-
+  apreciateTip: function () {
+    console.log("已点击喜欢")
+  },
+  shareTip: function () {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    console.log("已点击分享")
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,4 +1,3 @@
-<!--pages/home/travelNote/tips/tips.wxml-->
 <swiper class="screen-swiper " style="min-height:240rpx;height:260rpx;" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
   <swiper-item wx:for="{{swiperList}}" wx:key>
     <image src="{{item.url}}" mode="scaleToFill"></image>
@@ -6,7 +5,7 @@
 </swiper>
 
 
-<view class="flex text-lg bg-white" style="height:80rpx;">
+<view class="flex  text-lg bg-white" style="height:80rpx;">
   <view class="flex-treble  padding-sm radius">{{articalData.title}}</view>
   <view class="flex-sub  padding-sm radius flex align-center">
     <text class="cuIcon-like text-grey margin-lr " bindtap="apreciateTip"></text>
@@ -67,4 +66,9 @@
 
 <view class="end-divider">
   <text class="padding-sm bg-white" style="z-index:99;">THE END</text>
+</view>
+
+<view class="footer-bar flex justify-between solid-top bg-white">
+  <text><text class="cuIcon-delete margin-right-xs" style="font-size:32rpx;"></text>删除游记</text>
+  <text><text class="cuIcon-share margin-right-xs" style="font-size:32rpx;"></text>分享游记</text>
 </view>

@@ -1,1 +1,23 @@
 /* pages/user/note/note.wxss */
+.note-swiper{
+  height: 340rpx !important;
+  border-bottom: 1rpx solid #e3e3e3;
+  position: relative;
+}
+.note-swiper swiper-item{
+  height: 340rpx !important;
+  padding: 0rpx 12rpx;
+}
+
+.label{
+  background-color: rgba(0, 0, 0, .5);
+  padding: 12rpx 32rpx;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

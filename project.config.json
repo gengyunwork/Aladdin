@@ -64,8 +64,8 @@
 				},
 				{
 					"id": 3,
-					"name": "pages/user/distribution/explain/explain",
-					"pathName": "pages/user/distribution/explain/explain",
+					"name": "pages/user/note/detail/detail",
+					"pathName": "pages/user/note/detail/detail",
 					"query": "",
 					"scene": null
 				}
