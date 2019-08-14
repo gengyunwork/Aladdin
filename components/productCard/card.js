@@ -13,6 +13,7 @@ Component({
     type: {
       type: String,
     }
+
   },
 
   /**
@@ -37,6 +38,9 @@ Component({
     },
     click_share0(e) {
       this.triggerEvent("click_share0", e.currentTarget.dataset.id)
+    },
+    click_details(e) {
+      this.triggerEvent("click_details", e.currentTarget.dataset.id)
     }
   },
 })

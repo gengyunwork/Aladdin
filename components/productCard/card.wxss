@@ -21,6 +21,7 @@
 .showPlace text {
   color: white;
 }
+
 .showTitle {
   float: left;
   width: 410rpx;
@@ -35,6 +36,7 @@
   font-size: 28rpx;
   line-height: 35rpx;
 }
+
 .showToast {
   text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
@@ -45,9 +47,10 @@
   width: 433rpx;
   line-height: 42rpx;
   font-size: 24rpx;
-    margin-left: 10rpx;
-    float: left;
+  margin-left: 10rpx;
+  float: left;
 }
+
 .showKey {
   float: left;
   margin-left: 10rpx;
@@ -57,10 +60,11 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
+
 .key {
   width: 110rpx;
   height: 30rpx;
-  background: #6FC7FA;
+  background: #6fc7fa;
   border-radius: 6rpx;
   color: white;
   font-size: 24rpx;
@@ -68,7 +72,8 @@
   line-height: 32rpx;
   margin-right: 20rpx;
 }
-.showMan1 ,.showMan2 ,.showMan3{
+
+.showMan1, .showMan2, .showMan3, .showMan4, .showMan5 {
   margin-left: 10rpx;
   margin-top: 20rpx;
   font-size: 20rpx;
@@ -79,22 +84,57 @@
   align-items: flex-end;
   justify-content: space-between;
 }
+
 .showMan2 {
   align-items: baseline;
 }
+
 .showMan3 {
- padding: 10rpx;
+  padding: 10rpx;
 }
+
+.showMan4 {
+  font-size: 28rpx;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-top: 40rpx;
+  padding-left: 10rpx;
+}
+
+.type0, .type1, .type2 {
+  width: 140rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #cc5af7;
+  border: 1rpx solid #cc5af7;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  margin-left: 302rpx;
+}
+
+.type1 {
+  color: #999;
+  border: 1rpx solid #999;
+}
+
+.type2 {
+  color: #f00;
+  border: 1rpx solid #f00;
+}
+
 .showBtn {
   width: 160rpx;
   height: 40rpx;
   text-align: center;
   line-height: 40rpx;
-  border: 1rpx solid #9F34DA;
-  color: #9F34DA;
-  border-radius:6rpx;
+  border: 1rpx solid #9f34da;
+  color: #9f34da;
+  border-radius: 6rpx;
 }
+
 .showMan3 text {
   font-size: 28rpx;
-  color: #E71827;
+  color: #e71827;
 }

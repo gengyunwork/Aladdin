@@ -11,6 +11,12 @@
 
           @样式3 skin=3 分享赚钱 type=1 合伙人（可分享） type=0 非合伙人（不可分享）
           @数据{img 图片,place 地点,title 标题,toast 详情,price 佣金}
+
+          @样式4 skin=4 概况
+          @数据{img 图片，place 地点，title 标题，toast 详情,price1 原价，price2 会员价}
+
+          @样式5 skin=5 订单
+          @数据{img 图片 , place 地点，title 标题 ，toast 详情,type =0 是待使用订单 type=1是已完成订单 type=2是退款订单 }
   -->
 
 
@@ -51,6 +57,18 @@
       <view style='width:35rpx;height:35rpx;' wx:if="{{type == 0}}" catchtap='click_share0'>
         <image src="{{shareImg}}"></image>
       </view>
+    </view>
+    <!-- skin=4 -->
+    <view class='showMan4' wx:if="{{skin==4}}">
+      <view style='color:#F11A1A;'>￥{{cardData.price1}}</view>
+      <view style='color:#333;margin-left:30rpx;'>会员价：￥{{cardData.price2}}</view>
+    </view>
+    <!-- skin=5 -->
+    <view class='showMan5' wx:if="{{skin==5}}">
+      <!-- type 为0 是待使用订单 为1是已完成订单 2是退款订单 -->
+      <view wx:if="{{type ==0}}" class='type0' catchtap='click_details'>核销</view>
+      <view wx:if="{{type ==1}}" class='type1'>已完成</view>
+      <view wx:if="{{type ==2}}" class='type2'>退款</view>
     </view>
   </view>
   <view style='clear:both'></view>
