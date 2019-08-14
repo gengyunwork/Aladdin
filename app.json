@@ -28,7 +28,10 @@
     "pages/home/travelNote/write/write",
     "pages/user/distribution/brokerage/brokerage",
     "pages/user/distribution/withdraw/withdraw",
-    "pages/user/distribution/wdSuccess/wdSuccess"
+    "pages/user/distribution/wdSuccess/wdSuccess",
+    "pages/user/distribution/record/record",
+    "pages/user/share/share",
+    "pages/user/distribution/explain/explain"
   ],
   "window": {
     "backgroundTextStyle": "light",

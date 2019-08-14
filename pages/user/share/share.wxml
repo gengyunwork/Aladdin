@@ -1,0 +1,6 @@
+<!--pages/user/share/share.wxml-->
+<base-top-bar title="分享海报" ></base-top-bar>
+<view style="width:100vw;height:100vh;" class="bg-white padding-xl text-center">
+  <view class="margin-top-lg">分享海报</view>
+  <image src="cloud://hy-2ecbc6.6879-hy-2ecbc6-1258445300/Aladdin/erweima.png" style="width:50vw;height:50vw;"></image>
+</view>

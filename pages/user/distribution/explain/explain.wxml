@@ -1,0 +1,11 @@
+<!--pages/user/distribution/explain/explain.wxml-->
+<base-top-bar title="分销说明"></base-top-bar>
+<view style="width:100vw;height:calc(100vh - 128rpx);position:relative;">
+  <image class="explain-bg" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/explain.jpg"></image>
+  <view class="explain">
+    <view class="text-center">
+      <text class="margin text-lg">分销说明</text>
+      <view class="text-justify margin-top-xl" style="line-height:2;">The city's professional tennis venues and clubs are all in Xiangzhou where there are 62 courts. Furthermore, there are 36 courts at schools, 16 at hotels and resorts, 21 in residential communities, and 31 in community parks and at cultural squares.</view>
+    </view>
+  </view>
+</view>

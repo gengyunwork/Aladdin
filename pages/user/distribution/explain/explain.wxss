@@ -1,0 +1,28 @@
+/* pages/user/distribution/explain/explain.wxss */
+
+.explain-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.explain {
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  right: 14%;
+  bottom: 8%;
+  border: 2rpx solid #333;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.explain>view {
+  border: 2rpx solid #333;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  height: 100%;
+}

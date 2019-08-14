@@ -64,8 +64,8 @@
 				},
 				{
 					"id": 3,
-					"name": "pages/user/distribution/wdSuccess/wdSuccess",
-					"pathName": "pages/user/distribution/wdSuccess/wdSuccess",
+					"name": "pages/user/distribution/explain/explain",
+					"pathName": "pages/user/distribution/explain/explain",
 					"query": "",
 					"scene": null
 				}
