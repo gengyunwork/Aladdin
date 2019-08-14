@@ -1,22 +1,26 @@
-// pages/user/user.js
+// pages/user/order/details/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    head_name:"二龙山国家森林公园二龙山国家森林公园",
+    head_toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归...",
+    head_time:"2019-7-10 10:02:59",
+    head_num:"3",
+    body_num:"000000000000",
+    body_price:"380.00",
+    foot_name:"二龙山森林国家动物园",
+    foot_distance:"25.3",
+    foot_address:"黑龙江省哈尔滨市阿城区二江省哈尔滨市江省哈尔滨市江",
+    erweima:"cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/erweima.png",
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  linkToPartner:function(){
-    wx.navigateTo({
-      url: "../home/applyPartner/index",
-    })
-  },
-  
   onLoad: function (options) {
 
   },

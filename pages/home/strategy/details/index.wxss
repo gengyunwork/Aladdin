@@ -1,0 +1,21 @@
+/* pages/home/strategy/details/index.wxss */
+.headTitle {
+  font-size: 36rpx;
+  padding: 18rpx 28rpx;
+}
+.headTitle text {
+  border-bottom: 1rpx solid #8C21C7;
+  padding-right: 16rpx;
+}
+.generalBar {
+
+}
+.title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  height: 30rpx;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}

@@ -1,0 +1,44 @@
+<!--pages/user/order/details/index.wxml-->
+<base-top-bar title="我的订单"></base-top-bar>
+<view>
+  <view class="head">
+    <view class="headBar">
+      <view class="headTitle">
+        <text>阿拉叮会员部落</text>
+      </view>
+      <view class="headMsg">
+        <view class="headName">{{head_name}}</view>
+        <view class="headToast">{{head_toast}}</view>
+        <view style='display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;'>
+          <view class="headTime">下单时间：{{head_time}}</view>
+          <view class='headNum' style='color:#962BD2;'>x{{head_num}}</view>
+        </view>
+      </view>
+      <view class="headShow">
+        <view class="headImg">
+          <image src="{{erweima}}"></image>
+        </view>
+        <view class="headToast1">请给商家出示二维码</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='body'>
+    <view>阿拉叮订单号:{{body_num}}</view>
+    <view>总价：￥{{body_price}}</view>
+  </view>
+
+  <view class='foot'>
+    <view class='footLeft'>
+      <view class='footName'>
+        <view>{{foot_name}}</view>
+        <text class="cuIcon-location" style='color:#666666;font-size:38rpx;'></text>
+        <view>{{foot_distance}}km</view>
+      </view>
+      <view class='footAddress'>{{foot_address}}</view>
+    </view>
+    <view class='footRight'>
+      <text class="cuIcon-dianhua" style='color:#992ED4;font-size:46rpx;'></text>
+    </view>
+  </view>
+</view>
