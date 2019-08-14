@@ -32,7 +32,8 @@
     "pages/user/distribution/record/record",
     "pages/user/share/share",
     "pages/user/distribution/explain/explain",
-    "pages/user/note/detail/detail"
+    "pages/user/note/detail/detail",
+    "pages/home/bargain/finish/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

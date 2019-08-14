@@ -1,1 +1,90 @@
 /* pages/tickets/tickets.wxss */
+
+.top-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 260rpx;
+  letter-spacing: 12rpx;
+  background: linear-gradient(45deg, rgba(233, 181, 255, 0.8), rgba(175, 110, 251, 0.8));
+  z-index: -1;
+}
+
+.ticket-card {
+  z-index: 99;
+  border-radius: 16rpx;
+  overflow: hidden;
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 81% 100%, 81% 90%, 75% 90%, 75% 100%, 0% 100%); */
+}
+
+.ticket-card .mask{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.ticket-card .title {
+  color: #000;
+  padding-bottom: 12rpx;
+}
+
+.ticket-card .desc {
+  font-size: 24rpx;
+  padding-bottom: 12rpx;
+}
+
+.ticket-card .location {
+  font-size: 24rpx;
+}
+
+.ticket-card .date {
+  font-size: 22rpx;
+  margin-bottom: 18rpx;
+  margin-top: 26rpx;
+}
+
+.ticket-card .time {
+  font-size: 22rpx;
+  margin-bottom: 26rpx;
+}
+
+.ticket-card .flex-twice {
+  border-right: 2rpx dashed var(--mauve);
+  position: relative;
+}
+
+.ticket-card .flex-twice::after, .ticket-card .flex-twice::before {
+  content: "";
+  height: 55rpx;
+  width: 55rpx;
+  border-radius: 50%;
+  background: rgba(240, 240, 240, 1);
+  position: absolute;
+  right: -28rpx;
+  z-index: 999;
+}
+
+.ticket-card .flex-twice::after {
+  bottom: 0;
+  transform: translateY(90%);
+}
+
+.ticket-card .flex-twice::before {
+  top: 0;
+  transform: translateY(-90%);
+}
+
+.ticket-card:nth-child(2) .flex-twice::before {
+  top: 0;
+  transform: translateY(-90%);
+  background-color: rgba(197, 148, 247, 1)
+}

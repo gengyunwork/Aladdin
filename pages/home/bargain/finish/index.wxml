@@ -1,0 +1,38 @@
+<!--pages/home/bargain/finish/index.wxml-->
+<base-top-bar title="疯狂砍价" />
+<view style="background-color:#FFDE00;" class="text-center padding text-white">
+  <image src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/yes.png" style="width:120rpx;height:120rpx;"></image>
+  <view class="padding-top">砍价成功 ， 请去商家兑换</view>
+</view>
+
+
+<view class="padding-sm  text-center">
+  <view class="bg-white radius padding-sm">
+    <view>扫码核销</view>
+    <image src="cloud://hy-2ecbc6.6879-hy-2ecbc6-1258445300/Aladdin/erweima.png" style="width:246rpx;height:246rpx;"></image>
+  </view>
+
+  <view class="bg-white radius padding-sm margin-top">
+    <view class="header-divider">
+      <text class="text">活动描述</text>
+    </view>
+    <view class="flex text-left" style="min-height:200rpx;">
+      <view class="flex-sub">
+        <image class="radius" src="cloud://hy-2ecbc6.6879-hy-2ecbc6-1258445300/Aladdin/travel-view.jpg" ></image>
+      </view>
+      <view class="flex-twice padding-left">
+        <view class="text-black">哈尔冰公园</view>
+        <view>位于黑龙江哈尔滨市最北部，有许多漂亮的自然景观</view>
+      </view>
+    </view>
+  </view>
+  <view class="bg-white radius padding-sm margin-top text-left">
+    <view class="header-divider">
+      <text class="text">兑换说明</text>
+    </view>
+    <view class="margin-bottom-xs">1. 兑换说明兑换说明兑换说明</view>
+    <view class="margin-bottom-xs">2. 兑换说明兑换说明兑换说明</view>
+    <view class="margin-bottom-xs">3. 兑换说明兑换说明兑换说明</view>
+    <view class="margin-bottom-xs">4. 兑换说明兑换说明兑换说明</view>
+  </view>
+</view>

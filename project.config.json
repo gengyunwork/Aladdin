@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -64,15 +64,15 @@
 				},
 				{
 					"id": 3,
-					"name": "pages/home/travelNote/note",
-					"pathName": "pages/home/travelNote/note",
+					"name": "pages/home/bargain/finish/index",
+					"pathName": "pages/home/bargain/finish/index",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/user/favorite/favorite",
-					"pathName": "pages/user/favorite/favorite",
+					"id": 4,
+					"name": "票单",
+					"pathName": "pages/tickets/tickets",
 					"query": "",
 					"scene": null
 				}
