@@ -108,7 +108,11 @@ Page({
     }]
 
   },
-
+  writeNote:function(e){
+    wx.navigateTo({
+      url: 'write/write',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -168,8 +172,6 @@ Page({
     this.setData({
       searchString: e.detail.value
     })
-  },
-  writeNote(e) {
-    console.log("writeNote")
   }
+ 
 })

@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // type为0 时用户 为1时新用户进入
+    type: "",
     goods_id: "",
     userImg: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/userImg.png',
     userName: "王自强",
@@ -46,8 +48,9 @@ Page({
       }
     ],
     showImg: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
-    showName:"哈尔滨北方森林动物园",
-    showPlace: "位于黑龙江省哈尔滨市哈牡公路46公里处"
+    showName: "哈尔滨北方森林动物园",
+    showPlace: "位于黑龙江省哈尔滨市哈牡公路46公里处",
+    toastImg: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/toastImg.png"
   },
 
   /**
@@ -56,8 +59,27 @@ Page({
   onLoad: function(options) {
     this.setData({
       goods_id: options.goods_id,
+      type: options.type,
     })
-    console.log(this.data.goods_id)
+    console.log(this.data.type)
+  },
+  //新用户点击我要参加 跳转到疯狂砍价页面
+  linkToBargain: function(e) {
+    wx.navigateTo({
+      url: '../bargain',
+    })
+  },
+  //新用户点击帮砍一刀 弹出框
+  //点击弹出框
+  showModal(e) {
+    this.setData({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
 
   /**

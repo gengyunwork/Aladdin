@@ -28,6 +28,16 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  linkToApplyVip:function(e){
+    wx.navigateTo({
+      url: '../../home/applyVip/vip',
+    })
+  },
+  linkToCommodity:function(e){
+    wx.navigateTo({
+      url: '../../home/commodity/index?link_id='+1,
+    })
+  },
   onLoad: function(options) {
 
   },

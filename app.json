@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/home/bargain/details/index",
     "pages/home/bargain/bargain",
-    "pages/home/home",
     "pages/user/private/private",
     "pages/user/message/details/index",
     "pages/user/message/message",
@@ -37,7 +37,8 @@
     "pages/user/share/share",
     "pages/user/distribution/explain/explain",
     "pages/user/note/detail/detail",
-    "pages/home/bargain/finish/index"
+    "pages/home/bargain/finish/index",
+    "pages/home/sale/sale"
   ],
   "window": {
     "backgroundTextStyle": "light",

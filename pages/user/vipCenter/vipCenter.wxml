@@ -14,14 +14,14 @@
     <view class='bodyImg' wx-if="{{id == 1}}">
       <image src='{{vipImg}}'></image>
     </view>
-    <view class='bodyShow' wx-if="{{id==0}}">
+    <view class='bodyShow' wx-if="{{id==0}}" bindtap='linkToApplyVip'>
       成为会员
     </view>
   </view>
   <view class='foot'>
     <view class='footTitle'>精选专区</view>
     <view class='footShow'>
-      <view class='footBar' wx:for="{{showList}}" :key>
+      <view class='footBar' wx:for="{{showList}}" :key bindtap='linkToCommodity'>
         <view class='footImg'>
           <image src='{{item.img}}'></image>
         </view>

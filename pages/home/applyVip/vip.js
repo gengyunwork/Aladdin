@@ -11,16 +11,20 @@ Page({
     date: "365",
     vipLists: [{
       icon: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/vipIcon1.png",
-      text: '会员专享'
+      text: '会员专享',
+      id: 0
     }, {
       icon: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/vipIcon2.png",
-      text: '会员商品'
+      text: '会员商品',
+      id: 1
     }, {
       icon: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/vipIcon3.png",
-      text: '客服专项'
+      text: '客服专项',
+      id: 2
     }, {
       icon: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/vipIcon4.png",
-      text: '邀请有奖'
+      text: '邀请有奖',
+      id: 3
     }],
     ps: '1.兑换说明兑换说明兑换说明兑换说明兑换说明兑换说明兑1.兑换说明兑换说明兑换说明兑换说明兑换说明兑换说明兑1.兑换说明兑换说明兑换说明兑换说明兑换说明兑换说明兑1.兑换说明兑换说明兑换说明兑换说明兑换说明兑换说明兑v1.兑换说明兑换说明兑换说明兑换说明兑换说明兑换说明兑'
   },
@@ -31,7 +35,14 @@ Page({
   onLoad: function(options) {
 
   },
-
+  linkToOthers:function(e) {
+    console.log(e.currentTarget.dataset.id)
+    if (e.currentTarget.dataset.id == 0) {
+      wx.navigateTo({
+        url: '../vipOnly/vipOnly',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

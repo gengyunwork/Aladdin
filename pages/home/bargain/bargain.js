@@ -64,12 +64,21 @@ Page({
   //点击继续砍价
   linkToDetails: function(e) {
     wx.navigateTo({
-      url: 'details/index?goods_id=' + e.currentTarget.dataset.goods_id,
+      url: 'details/index?goods_id=' + e.currentTarget.dataset.goods_id + "&type="+0,
     })
   },
   //点击立即兑换
   linkToFinish: function(e) {
     console.log(e.currentTarget.dataset.goods_id)
+    wx.navigateTo({
+      url: 'finish/index',
+    })
+  },
+  //普通商品点击立即砍价
+  linkToCommodity:function(e){
+    wx.navigateTo({
+      url: 'details/index?type='+1,
+    })
   },
   /**
    * 生命周期函数--监听页面加载

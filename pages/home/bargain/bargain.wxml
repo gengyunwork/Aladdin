@@ -54,7 +54,7 @@
               <text style='font-size:24rpx;color:#999999;text-decoration:line-through'>￥{{item.price2}}</text>
             </view>
 
-            <view class='showBtn1'>立即砍价</view>
+            <view class='showBtn1' bindtap='linkToCommodity'>立即砍价</view>
           </view>
         </view>
       </view>

@@ -4,10 +4,9 @@
   <!-- 轮播 -->
   <!-- <image src='{{headImg}}'></image> -->
   <view style='margin-bottom: 20rpx;'>
-    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
-      <swiper-item wx:for="{{swiperList}}" wx:key style="width:100%;height:260rpx;margin-bottom: 20rpx;">
-        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    <swiper class="screen-swiper " style="min-height:240rpx;height:260rpx;" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key>
+        <image src="{{item.url}}" mode="scaleToFill"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -58,8 +57,8 @@
       </view>
       <view>
         <scroll-view class="scroll-box" scroll-x scroll-with-animation scroll-into-view="{{toView}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
-          <view class="card-box" id="card_{{index}}" wx:for="{{list}}" wx:key="{{item.id}}">
-            <view class='card'>
+          <view class="card-box" id="card_{{index}}" wx:for="{{list}}" wx:key="{{item.id}}" data-id='{{item.id}}' bindtap='linkToNoteTips'>
+            <view class='card' >
               <view class='cardName'>{{item.name}}</view>
               <view class='cardPs'>{{item.ps}}</view>
               <view class='cardOthers'>
@@ -98,7 +97,7 @@
       <view class="action" wx:else catchtap='onCollectionTap' data-collected='{{collected}}'>
         <view class="cuIcon-favorfill"></view> 收藏
       </view>
-      <view class="bg-red submit" wx:if="{{link_id ==1}}">立即订购</view>
+      <view class="bg-red submit" wx:if="{{link_id ==1}}" bindtap='showPay'>立即订购</view>
       <!-- 会员 -->
       <view class="bg-red submit" wx:if="{{link_id ==2&& user_type == 1}}" bindtap="showModal" data-target="Modal">立即领取</view>
       <!-- 非会员 -->
@@ -133,7 +132,7 @@
         </view>
       </view>
       <view class="cu-bar bg-white">
-        <view class="action margin-0 flex-sub  solid-left" >
+        <view class="action margin-0 flex-sub  solid-left">
           <view class="toastBtn2" bindtap='linkToApplyVip'>
             成为会员
           </view>

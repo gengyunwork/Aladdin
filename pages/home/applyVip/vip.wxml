@@ -10,7 +10,7 @@
     <view class="vipMember" wx:if="{{id==0}}">加入阿拉丁会员</view>
   </view>
   <view class="vipBar">
-    <view class="vipItem" wx:for="{{vipLists}}" :key>
+    <view class="vipItem" wx:for="{{vipLists}}" :key bindtap='linkToOthers' data-id='{{item.id}}'>
       <view style="width:46rpx;height:40rpx;margin:0 auto;">
         <image src="{{item.icon}}" style="width:100%;height:100%;"></image>
       </view>

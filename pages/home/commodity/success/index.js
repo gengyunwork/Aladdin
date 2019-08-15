@@ -18,7 +18,7 @@ Page({
   },
   //点击继续购物 跳转到首页
   linkToHome:function(e){
-    wx.redirectTo({
+    wx.switchTab({
       url: "../../../../pages/home/home",
 
     })

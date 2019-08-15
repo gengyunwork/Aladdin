@@ -116,7 +116,7 @@ progress {
   right: -20px;
   position: absolute;
   content: "";
-  border-bottom: 2px #8936E3 solid;
+  border-bottom: 2px #8936e3 solid;
   display: inline-block;
   width: 10px;
   align-self: center;
@@ -125,7 +125,7 @@ progress {
 
 .right {
   position: relative;
-  border-bottom: 2px #8936E3 solid;
+  border-bottom: 2px #8936e3 solid;
   display: inline-block;
   width: 60px;
   align-self: center;
@@ -136,7 +136,7 @@ progress {
   left: -20px;
   position: absolute;
   content: "";
-  border-bottom: 2px #8936E3 solid;
+  border-bottom: 2px #8936e3 solid;
   display: inline-block;
   width: 10px;
   align-self: center;
@@ -145,7 +145,7 @@ progress {
 
 .left {
   position: relative;
-  border-bottom: 2px #8936E3 solid;
+  border-bottom: 2px #8936e3 solid;
   display: inline-block;
   width: 60px;
   align-self: center;
@@ -174,3 +174,28 @@ progress {
   margin-top: 20rpx;
 }
 
+.shareBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shareBtn1 {
+  width: 240rpx;
+  height: 60rpx;
+  color: white;
+  background: linear-gradient(#8432db, #b78ae7);
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-top: 24rpx;
+  border-radius: 10rpx;
+}
+
+.toastBtn {
+  font-size: 36rpx;
+  padding: 20rpx 0rpx;
+  color:#9320D0;
+  border-top: 1rpx solid #DDDDDD;
+}
