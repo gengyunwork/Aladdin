@@ -1,1 +1,121 @@
 /* pages/user/vipCenter/vipCenter.wxss */
+
+.headImg {
+  width: 100%;
+  height: 328rpx;
+}
+
+.userImg {
+  width: 218rpx;
+  height: 218rpx;
+  margin: 0 auto;
+  margin-top: -250rpx;
+}
+
+.userImg image {
+  border-radius: 50%;
+}
+
+.body {
+  margin-top: 40rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bodyName {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #000;
+  padding-left: 60rpx;
+}
+
+.bodyImg {
+  width: 45rpx;
+  height: 41rpx;
+  margin-left: 20rpx;
+}
+
+.bodyShow {
+  width: 120rpx;
+  height: 43rpx;
+  font-size: 28rpx;
+  color: white;
+  text-align: center;
+  line-height: 43rpx;
+  background: linear-gradient(45deg, rgba(255, 253, 96, 1), rgba(255, 186, 0, 1));
+  border-radius: 8rpx;
+  margin-left: 20rpx;
+}
+
+.foot {
+  padding: 30rpx;
+}
+
+.footTitle {
+  height: 47rpx;
+  line-height: 47rpx;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+  border-left: 3rpx solid #9025cb;
+}
+
+.footShow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20rpx;
+}
+
+.footBar {
+  width: 335rpx;
+  height: 330rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.footImg {
+  width: 100%;
+  height: 230rpx;
+}
+
+.footImg image {
+  border-radius: 10rpx;
+}
+
+.footName {
+  font-size: 28rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10rpx;
+}
+
+.footOther {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.footPrice {
+  font-size: 26rpx;
+  color: #E41F1F;
+}
+
+.footBtn {
+  font-size: 26rpx;
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #9025CB;
+  border: 1rpx solid #9025CB;
+  border-radius:10rpx;
+}

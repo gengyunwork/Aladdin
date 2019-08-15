@@ -1,3 +1,64 @@
 <!--pages/home/bargain/bargain.wxml-->
 <!-- 砍价 -->
-<text>pages/home/bargain/bargain.wxml</text>
+<base-top-bar title="疯狂砍价"></base-top-bar>
+<view class="border">
+  <view class="logo">
+    <image src='{{headImg}}'></image>
+  </view>
+  <view wx:for="{{bargainList}}" :key>
+    <!-- 正在进行中.... -->
+    <view class='cuttingList' wx:if="{{item.id == 0}}">
+      <view class="cutting_title">
+        <text class="left"></text>
+        <text class="title">正在进行中</text>
+        <text class="right"></text>
+      </view>
+      <view class='cuttingBar' wx:for="{{item.list}}" :key>
+        <view class="showImg">
+          <image src='{{item.img}}'></image>
+          <view class='showPlace'>
+            <text>{{item.place}}</text>
+          </view>
+        </view>
+        <view style='padding-left:15rpx;width:420rpx;'>
+          <view class='showTitle'>{{item.title}}</view>
+          <view class='showTime' wx:if="{{item.type == 0}}">还剩
+            <text>{{item.time}}</text>过期</view>
+          <view class='showTime' wx:if="{{item.type == 1}}" style='font-size:24rpx;color:#FF0000'>砍价成功</view>
+          <view class='showOthers'>
+            <view class='showPrice'>￥{{item.price}}</view>
+            <!-- 继续砍价 -->
+            <view class='showBtn' wx:if="{{item.type==0}}" bindtap='linkToDetails' data-goods_id='{{item.goods_id}}'>{{item.type_name}}</view>
+            <!-- 立即兑换 -->
+            <view class='showBtn' wx:if="{{item.type==1}}" bindtap='linkToFinish' data-goods_id='{{item.goods_id}}'>{{item.type_name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 普通的物品栏 -->
+    <view class='normalList' wx:if="{{item.id == 1}}" :key>
+      <view class='normalBar' wx:for="{{item.list}}" :key>
+        <view class='showImg1'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view style='width:380rpx;'>
+          <view class='showTitle1'>{{item.title}}</view>
+          <view class='showOther1'>
+            <view style='font-size:24rpx;color:#666;'>{{item.time}}结束</view>
+            <view style='font-size:20rpx;color:#999;'>销量{{item.num}}</view>
+          </view>
+          <view class='showOther2'>
+            <view>
+              <text style='font-size:36rpx;color:#FF0000'>￥{{item.price1}}</text>
+              <text style='font-size:24rpx;color:#999999;text-decoration:line-through'>￥{{item.price2}}</text>
+            </view>
+
+            <view class='showBtn1'>立即砍价</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,2 +1,37 @@
 <!-- 会员中心 -->
-<view>会员中心</view>
+<base-top-bar title="会员中心"></base-top-bar>
+<view>
+  <view class='head'>
+    <view class='headImg'>
+      <image src='{{headImg}}'></image>
+    </view>
+    <view class='userImg'>
+      <image src='{{userImg}}'></image>
+    </view>
+  </view>
+  <view class='body'>
+    <span class='bodyName'>奥111111111111111</span>
+    <view class='bodyImg' wx-if="{{id == 1}}">
+      <image src='{{vipImg}}'></image>
+    </view>
+    <view class='bodyShow' wx-if="{{id==0}}">
+      成为会员
+    </view>
+  </view>
+  <view class='foot'>
+    <view class='footTitle'>精选专区</view>
+    <view class='footShow'>
+      <view class='footBar' wx:for="{{showList}}" :key>
+        <view class='footImg'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='footName'>{{item.name}}</view>
+        <view class='footOther'>
+          <view class='footPrice'>会员价￥{{item.price}}</view>
+          <view class='footBtn'>免费领取</view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>

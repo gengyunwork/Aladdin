@@ -39,7 +39,7 @@
     <image class="icon margin-bottom-xs" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/note.png"></image>
     <text>我的游记</text>
   </navigator>
-  <navigator url="/pages/user/applyPartner/partner" class="padding flex align-center flex-direction" bindtap='linkToPartner'>
+  <navigator url="/pages/home/applyPartner/index" class="padding flex align-center flex-direction" bindtap='linkToPartner'>
     <image class="icon margin-bottom-xs" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/coordinate.png"></image>
     <text>合伙人招募</text>
   </navigator>

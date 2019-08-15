@@ -1,1 +1,180 @@
 /* pages/home/bargain/bargain.wxss */
+
+.logo {
+  width: 100%;
+  height: 184rpx;
+}
+
+.cuttingList {
+  width: 100%;
+  background: #ffde00;
+  padding-bottom: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.normalBar {
+  margin-bottom: 10rpx;
+}
+
+.right::after {
+  right: -20px;
+  position: absolute;
+  content: "";
+  border-bottom: 2px black solid;
+  display: inline-block;
+  width: 10px;
+  align-self: center;
+  /* margin-right: 5px; */
+}
+
+.right {
+  position: relative;
+  border-bottom: 2px black solid;
+  display: inline-block;
+  width: 60px;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.left::before {
+  left: -20px;
+  position: absolute;
+  content: "";
+  border-bottom: 2px black solid;
+  display: inline-block;
+  width: 10px;
+  align-self: center;
+  /* margin-right: 5px; */
+}
+
+.left {
+  position: relative;
+  border-bottom: 2px black solid;
+  display: inline-block;
+  width: 60px;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.cutting_title {
+  display: flex;
+  justify-content: center;
+  height: 67rpx;
+  line-height: 67rpx;
+}
+
+.cuttingBar {
+  width: 92%;
+  height: 233rpx;
+  background: white;
+  border-radius: 10rpx;
+  margin-left: 4%;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showImg {
+  width: 227rpx;
+  height: 189rpx;
+  position: relative;
+}
+
+.showPlace {
+  width: 100%;
+  height: 34rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 34rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.showPlace text {
+  color: white;
+  font-size: 28rpx;
+}
+
+.showTitle, .showTitle1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.showTime {
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.showTime text {
+  color: #f00;
+}
+
+.showOthers, .showOther1, .showOther2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showOther {
+  margin-top: 40rpx;
+}
+
+.showOther1 {
+  margin-top: 24rpx;
+}
+
+.showOther2 {
+  margin-top: 55rpx;
+}
+
+.showPrice {
+  font-size: 36rpx;
+  color: #f00;
+}
+
+.showBtn {
+  background: #8f24ca;
+  width: 120rpx;
+  height: 36rpx;
+  color: white;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+}
+
+.normalBar {
+  width: 100%;
+  height: 280rpx;
+  background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 20rpx;
+}
+
+.showImg1 {
+  width: 312rpx;
+  height: 220rpx;
+}
+
+.showBtn1 {
+  width: 117rpx;
+  height: 36rpx;
+  color: white;
+  background: #f00;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+}

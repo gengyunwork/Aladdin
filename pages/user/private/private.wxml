@@ -1,3 +1,63 @@
 <!--pages/user/private/private.wxml-->
 <!-- 个人中心 -->
-<text>pages/user/private/private.wxml</text>
+<base-top-bar title="个人中心"></base-top-bar>
+<view>
+  <!-- 头像 -->
+  <view class='listShow'>
+    <view class='listName'>头像</view>
+    <view style='width:68rpx;height:68rpx'>
+      <image src='{{userImg}}' style='border-radius:50%;'></image>
+    </view>
+  </view>
+  <!-- 昵称 -->
+  <view class='listShow'>
+    <view class='listName'>昵称</view>
+    <view class="listOthers" bindtap='linkToChangeName'>
+      <text>{{name}}</text>
+      <text class="cuIcon-right "></text>
+    </view>
+  </view>
+  <!-- 年龄 -->
+  <view class="cu-form-group">
+    <view class="title">年龄</view>
+    <picker mode="date" value="{{date}}" start="1900-01-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <!-- 性别 -->
+  <view class="cu-form-group">
+    <view class="title">性别</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'请选择性别'}}
+      </view>
+    </picker>
+  </view>
+  <!-- 手机号 -->
+  <view class='listShow' style='margin-top:20rpx;' bindtap='linkToChangePhone'>
+    <view class='listName'>手机号</view>
+    <view class="listOthers">
+      <text>{{phone}}</text>
+      <text class="cuIcon-right"></text>
+    </view>
+  </view>
+  <!-- 地址 -->
+  <view class="cu-form-group">
+    <view class="title">地址选择</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 个性签名 -->
+  <view class='listShow'>
+    <view class='listName'>个性签名</view>
+    <view class="listOthers">
+      <text>{{signature}}</text>
+      <text class="cuIcon-right"></text>
+    </view>
+  </view>
+</view>

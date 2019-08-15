@@ -1,6 +1,12 @@
 {
   "pages": [
+    "pages/home/bargain/details/index",
+    "pages/home/bargain/bargain",
     "pages/home/home",
+    "pages/user/private/private",
+    "pages/user/message/details/index",
+    "pages/user/message/message",
+    "pages/user/vipCenter/vipCenter",
     "pages/user/order/details/index",
     "pages/user/order/order",
     "pages/home/strategy/details/index",
@@ -15,20 +21,19 @@
     "pages/classify/classify",
     "pages/tickets/tickets",
     "pages/user/user",
-    "pages/home/bargain/bargain",
     "pages/home/travelNote/note",
     "pages/user/favorite/favorite",
     "pages/user/note/note",
-    "pages/user/message/message",
-    "pages/user/vipCenter/vipCenter",
-    "pages/user/private/private",
     "pages/user/distribution/distribution",
     "pages/home/search/search",
     "pages/home/travelNote/tips/tips",
     "pages/home/travelNote/write/write",
     "pages/user/distribution/brokerage/brokerage",
     "pages/user/distribution/withdraw/withdraw",
-    "pages/user/distribution/wdSuccess/wdSuccess"
+    "pages/user/distribution/wdSuccess/wdSuccess",
+    "pages/user/private/action/changeName",
+    "pages/user/private/action/changePhone",
+    "pages/home/bargain/finish/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,6 @@
+<!--pages/user/private/action/changeName.wxml-->
+<base-top-bar title="修改昵称"></base-top-bar>
+<view class="cu-form-group">
+  <input placeholder="请输入您的昵称" class="input" name="userName" bindinput ="userNameInput"></input>
+</view>
+<view class='btn' bindtap='linkBack'>确认</view>

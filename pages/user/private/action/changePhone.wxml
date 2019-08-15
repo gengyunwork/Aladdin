@@ -1,0 +1,12 @@
+<!--pages/user/private/action/changePhone.wxml-->
+<base-top-bar title="修改手机号"></base-top-bar>
+<view class="cu-form-group">
+  <input placeholder="请输入您的手机号" class="input" name="userPhone" bindinput="userPhoneInput" maxlength='11'></input>
+</view>
+
+<view class="cu-form-group" style='margin-top:10rpx;' >
+  <input placeholder="请输入验证码"></input>
+  <button class="cu-btn bg-mauve shadow">获取验证码</button>
+</view>
+
+<view class='btn' bindtap='linkBack'>确认</view>
