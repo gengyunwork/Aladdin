@@ -40,7 +40,7 @@
     </view>
   </navigator>
   <!-- 提现记录 -->
-  <navigator url="/pages/user/distribution/brokerage/brokerage" class="cu-item  menuArrow" style="border-bottom:8rpx solid #F5F5F5;">
+  <navigator url="/pages/user/distribution/record/record" class="cu-item  menuArrow" style="border-bottom:8rpx solid #F5F5F5;">
     <view class="content">
       <image class="dis-icon--s" src="../../../images/distribution/order2.png"></image>
       <text class="text-grey">提现记录</text>

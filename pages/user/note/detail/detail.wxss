@@ -1,0 +1,35 @@
+/* pages/user/note/detail/detail.wxss */
+
+.pipe {
+  width: 3rpx;
+  height: 70%;
+  background-color: #e3e3e3;
+}
+
+.end-divider {
+  color: purple;
+  background: white;
+  position: relative;
+  text-align: center;
+  z-index: 11;
+  padding: 20rpx;
+}
+
+.end-divider::after {
+  content: "";
+  width: 70%;
+  height: 2rpx;
+  background-color: purple;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  z-index: -1;
+}
+
+.footer-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:14rpx 32rpx;
+}

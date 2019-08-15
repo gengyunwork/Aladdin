@@ -50,7 +50,7 @@
         <view style='font-size:28rpx;margin-left:20rpx;'>{{item.name}}</view>
       </view>
       <view style='font-size:28rpx;'>已砍价
-        <text style='color:#8F24CA'>{{item.price}}</text> </view>
+        <text style='color:#8F24CA'>{{item.price}}</text>元</view>
     </view>
   </scroll-view>
 </view>

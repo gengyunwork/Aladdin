@@ -1,0 +1,26 @@
+<!--components/noteCard/noteCard.wxml-->
+<navigator url="/pages/home/travelNote/tips/tips?id={{data.id}}" class="flex bg-white p-tb-xs p-lr-sm" style="flex-direction:{{reverse?'row-reverse':'row'}}">
+  <view class="flex-treble  padding-sm">
+    <!-- 标题 -->
+    <view class="margin-bottom-xs">{{data.title}}</view>
+    <!-- 用户头像及昵称 -->
+    <view class=" margin-bottom-xs">
+      <view class="cu-avatar sm round margin-right-xs" style="background-image:url({{data.avatar}});"></view>
+      <text>{{data.alias}}</text>
+    </view>
+    <!-- 点赞数 浏览量 发布时间 -->
+    <view class="grid col-2 flex align-center text-gray" style="font-size:22rpx;">
+      <view>
+        <text class="cuIcon-appreciate lg  margin-right-xs"></text>
+        <text>{{data.appreciate}}</text>
+        <text class="cuIcon-attention  margin-lr-xs"></text>
+        <text>{{data.attention}}</text>
+      </view>
+      <text>发布时间:{{data.create_at}}</text>
+    </view>
+  </view>
+  <view class="flex-twice  padding-tb-sm padding-lr-xs shadow">
+    <image class="response h-100  radius" src="{{data.poster}}"></image>
+  </view>
+</navigator>
+{{logodir}}

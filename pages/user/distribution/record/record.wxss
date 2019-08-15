@@ -1,0 +1,10 @@
+/* pages/user/distribution/record/record.wxss */
+.toggle:first-child{
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+
+.toggle:last-child{
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}

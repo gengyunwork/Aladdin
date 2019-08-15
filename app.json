@@ -33,6 +33,10 @@
     "pages/user/distribution/wdSuccess/wdSuccess",
     "pages/user/private/action/changeName",
     "pages/user/private/action/changePhone",
+    "pages/user/distribution/record/record",
+    "pages/user/share/share",
+    "pages/user/distribution/explain/explain",
+    "pages/user/note/detail/detail",
     "pages/home/bargain/finish/index"
   ],
   "window": {

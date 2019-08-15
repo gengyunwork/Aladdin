@@ -1,3 +1,36 @@
 <!--pages/tickets/tickets.wxml-->
 <!-- 票单 -->
-<text>pages/tickets/tickets.wxml</text>
+<base-top-bar title="票单" />
+<view style="position:relative;" class="padding">
+  <view class="top-bg flex justify-center align-center text-white text-lg" style="">诚信为本 创新为魂</view>
+  <view class="bg-white text-center padding-lg" wx:if="{{!(tickets && tickets.length)}}">
+    <image src="../../images/ticket.png" class="margin-tb-lg" style="width:40vw;height:35vw;"></image>
+  </view>
+
+  <!-- 票单卡片 -->
+  <view class="bg-white padding-sm margin-bottom flex ticket-card" wx:for="{{tickets}}" wx:key="id">
+    <view class="mask" wx:if="{{item.state == 1}}">
+      <image src="../../images/oldticket.png" style="height:80%;width:290rpx;"></image>
+    </view>
+    <view class="flex-treble">
+      <!-- title -->
+      <view class="title">{{item.title}}</view>
+      <!-- desc -->
+      <view class="desc">
+        {{item.desc}}
+
+      </view>
+      <!-- location -->
+      <view class="location">
+        <text class="cuIcon-location text-maven text-lg"></text> {{item.location}}</view>
+    </view>
+    <view class="flex-twice padding-sm">
+      <image src="../../images/ticketimg.png"></image>
+    </view>
+    <view class="flex-sub padding-lr-sm">
+      <view class="date">{{item.date}}</view>
+      <view class="time">{{item.time}}</view>
+      <button class="cu-btn line-mauve sm" role="button" aria-disabled="false">{{item.num}}张</button>
+    </view>
+  </view>
+</view>

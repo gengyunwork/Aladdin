@@ -1,1 +1,29 @@
+
 /* pages/home/bargain/finish/index.wxss */
+
+/* pages/home/bargain/finish/index.wxss */
+
+.header-divider {
+  position: relative;
+  margin-bottom: 26rpx;
+}
+
+.header-divider::after {
+  content: "";
+  height: 2rpx;
+  width: 100%;
+  background: #8936e3;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.header-divider .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 99;
+}
+

@@ -64,8 +64,15 @@
 				},
 				{
 					"id": 3,
-					"name": "pages/user/distribution/wdSuccess/wdSuccess",
-					"pathName": "pages/user/distribution/wdSuccess/wdSuccess",
+					"name": "pages/home/bargain/finish/index",
+					"pathName": "pages/home/bargain/finish/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "票单",
+					"pathName": "pages/tickets/tickets",
 					"query": "",
 					"scene": null
 				}

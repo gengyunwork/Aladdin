@@ -1,0 +1,21 @@
+<!--pages/user/distribution/record/record.wxml-->
+<!-- 提现记录页面 -->
+<base-top-bar title="提现记录"></base-top-bar>
+<view class="padding text-center margin-bottom">
+  <text class="toggle padding-sm padding-lr solid radius line-mauve {{state==0? 'bg-mauve text-white':''}}" bindtap="recordChange" data-state="0">提现中</text>
+  <text class="toggle padding-sm padding-lr solid radius line-mauve {{state==1? 'bg-mauve text-white':''}}" bindtap="recordChange" data-state="1">已到账</text>
+</view>
+<view class="padding-tb-xs padding-lr bg-white  margin-bottom" wx:for="{{showingRecordList}}" wx:key="id">
+  <view class="flex justify-between solid-bottom padding-bottom-xs">
+    <text><text class="cuIcon-roundcheck margin-right-xs text-mauve" style="font-size:36rpx;vertical-align:middle;"></text>提现</text>
+    <text style="color:#F50F0F;">+120.00</text>
+  </view>
+  <view class="flex justify-between align-center padding-tb-sm">
+    <text><text class="cuIcon-time margin-right-xs  text-pink" style="font-size:36rpx;vertical-align:middle;"></text>申请提现时间</text>
+    <text class="text-xs" style="color:#666666;">2019-03-05 15:34</text>
+  </view>
+  <view class="flex justify-between align-center padding-bottom-sm">
+    <text><text class="cuIcon-refund margin-right-xs"  style="font-size:36rpx;vertical-align:middle;color:#9878FB;"></text>状态</text>
+    <text >{{item.state?'审核中':'已到账'}}</text>
+  </view>
+</view>
