@@ -133,6 +133,19 @@ Page({
       url: '../applyVip/apply',
     })
   },
+  //点击相关游记
+  linkToNoteTips(e) {
+    wx.navigateTo({
+      url: '../travelNote/tips/tips',
+    })
+    console.log(e)
+  },
+  //点击立即订购
+  showPay:function(e){
+    wx.switchTab({
+      url: '../../../pages/tickets/tickets',
+    })
+  },
   
 
   /**

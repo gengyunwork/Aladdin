@@ -43,14 +43,14 @@
   <view class='cheapBar'>
     <view class='cheapHead'>
       <text class='cheapName'>超值优惠</text>
-      <text class='cheapMore'>更多</text>
+      <text class='cheapMore' bindtap='linkToSale'>更多</text>
       <text class="cuIcon-right" style='color:#999999;'></text>
     </view>
     <!-- 分割线 -->
     <view class='width:100%;height:2rpx;border:1rpx solid;margin-top:10rpx;margin-bottom:10rpx;'></view>
     <!-- 图片列表 -->
     <view class='cheapList' wx:for="{{cheapList}}" wx:key data-id="{{item.id}}">
-      <view class="cheapItem {{item.id == 1||item.id ==2? 'first':'second'}}">
+      <view class="cheapItem {{item.id == 1||item.id ==2? 'first':'second'}}" bindtap='linkToCommodity'>
         <view class="cheapShow {{item.id == 1||item.id ==2? 'show':'noshow'}}">清凉一夏</view>
         <image src='{{item.img}}'></image>
         <text>{{item.title}}</text>

@@ -151,6 +151,18 @@ Page({
       DotStyle: e.detail.value
     })
   },
+  //点击超值优惠里面的item
+  linkToCommodity:function(e){
+    wx.navigateTo({
+      url: 'commodity/index?link_id='+1,
+    })
+  },
+  //点击超值优惠 更多
+  linkToSale:function(e){
+    wx.navigateTo({
+      url: 'sale/sale',
+    })
+  },
   linkToWhere: function(e) {
     //e.currentTarget.dataset.text获取点击的模块的值
     if (0 == e.currentTarget.dataset.id) {
@@ -184,12 +196,12 @@ Page({
   linkToVip: function(e) {
     if (1 == e.currentTarget.dataset.id) {
       wx.navigateTo({
-        url: 'applyVip/apply',
+        url: 'applyVip/vip',
       })
     }
     if (2 == e.currentTarget.dataset.id) {
       wx.navigateTo({
-        url: 'applyPartner/partner',
+        url: 'applyPartner/index',
       })
     }
     if (3 == e.currentTarget.dataset.id) {

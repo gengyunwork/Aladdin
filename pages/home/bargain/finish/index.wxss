@@ -1,3 +1,6 @@
+
+/* pages/home/bargain/finish/index.wxss */
+
 /* pages/home/bargain/finish/index.wxss */
 
 .header-divider {
@@ -23,3 +26,4 @@
   background: white;
   z-index: 99;
 }
+

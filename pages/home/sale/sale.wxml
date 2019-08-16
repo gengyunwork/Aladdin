@@ -1,6 +1,5 @@
-<!--pages/home/travelAround/travelAround.wxml-->
-<!-- 周边游 -->
-<base-top-bar title="周边游"></base-top-bar>
+<!--pages/home/sale/sale.wxml-->
+<base-top-bar title="超值优惠"></base-top-bar>
 <view class='root' style='background:white'>
   <!-- 轮播 -->
   <!-- <image src='{{headImg}}'></image> -->
@@ -16,6 +15,6 @@
 
   <!-- 组件 -->
   <view wx:for="{{items}}" wx:key>
-    <pro_card cardData="{{item}}" skin="2" id="proCard" bind:click_card="linkToCommodity"></pro_card>
+    <pro_card cardData="{{item}}" skin="4" id="proCard" bind:click_card="linkToCommodity"></pro_card>
   </view>
 </view>

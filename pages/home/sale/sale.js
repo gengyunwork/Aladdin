@@ -1,68 +1,65 @@
-// pages/home/shareMoney/shareMoney.js
+// pages/home/sale/sale.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    headImg: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/shareHead.png",
+    cardCur: 0,
+    swiperList: [{
+      id: 0,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
+    }, {
+      id: 1,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg',
+    }, {
+      id: 2,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
+    }, {
+      id: 3,
+      type: 'image',
+      url: 'cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/travel-view.jpg'
+    }],
     items: [{
       img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
-      place: "福建",
       title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
       toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
-      price: "9.9",
-      goods_id: 111,
+      price2: "1.00",
+      price1: "30.00",
+      goods_id: "1",
     }, {
       img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
-      place: "福建",
       title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
       toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
-      price: "9.9",
-      goods_id: 222,
+      price2: "1.00",
+      price1: "30.00",
+      goods_id: "2",
     }, {
       img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/goods.png",
-      place: "福建",
       title: "福州/武夷山/鼓浪屿/厦门/北海/桂林/阳朔3飞11日屿/厦门/北海/桂林/阳朔3飞11日",
       toast: "经典纯玩团0购物私家团让您满意而归经典纯玩团0购物私家团让您满意而归",
-      price: "9.9",
-      goods_id: 333,
-    }],
-    chooseBar: [{
-      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/wxIcon.png",
-      text: "微信好友"
-    }, {
-      img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/posterIcon.png",
-      text: "海报"
+      price2: "10.00",
+      price1: "30.00",
+      goods_id: "3",
     }]
   },
-  showModal1(e) {
-    this.setData({
-      modalName: e.currentTarget.dataset.target1
-    })
-  },
-  showModal2(e) {
-    this.setData({
-      modalName: e.currentTarget.dataset.target2
-    })
-  },
-  hideModal(e) {
-    this.setData({
-      modalName: null
-    })
-  },
-  linkToApplyPartner(e) {
-    wx.navigateTo({
-      url: '../applyPartner/index',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    console.log(this.data.items)
   },
-
+  linkToCommodity(e) {
+    console.log(e.detail)
+    // goods_id 商品id link_id 1 为周边游 2 为会员专享
+    wx.navigateTo({
+      url: '../commodity/index?goods_id=' + e.detail + '&link_id=1',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

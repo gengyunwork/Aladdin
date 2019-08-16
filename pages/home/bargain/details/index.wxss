@@ -1,0 +1,201 @@
+/* pages/home/bargain/details/index.wxss */
+
+.head {
+  width: 100%;
+  background: white;
+  padding: 20rpx 40rpx;
+}
+
+.headFirst {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headUserImg {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.headUserImg image {
+  border-radius: 50%;
+}
+
+.headSecond {
+  width: 100%;
+  margin-top: 20rpx;
+  height: 200rpx;
+  background: #f5f5f5;
+  padding: 10rpx 20rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goodsName, .goodsDetails {
+  font-size: 29rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goodsDetails {
+  font-size: 23rpx;
+  color: #666;
+}
+
+.goodsPrice1 {
+  color: #8d22c7;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+
+.headLast {
+  text-align: center;
+  margin-top: 22rpx;
+}
+
+progress {
+  width: 475rpx;
+  margin: 0 auto;
+  margin-top: 5rpx;
+}
+
+.shareBtn {
+  width: 465rpx;
+  height: 60rpx;
+  color: white;
+  background: linear-gradient(#8432db, #b78ae7);
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+  margin-top: 24rpx;
+  border-radius: 10rpx;
+}
+
+.body {
+  width: 100%;
+  background: white;
+  padding: 20rpx 40rpx;
+  margin-top: 22rpx;
+}
+
+.bodyTitle {
+  width: 100%;
+  height: 36rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.bodyList {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodyOther {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.foot {
+  width: 100%;
+  background: white;
+  margin-top: 20rpx;
+}
+
+.right::after {
+  right: -20px;
+  position: absolute;
+  content: "";
+  border-bottom: 2px #8936e3 solid;
+  display: inline-block;
+  width: 10px;
+  align-self: center;
+  /* margin-right: 5px; */
+}
+
+.right {
+  position: relative;
+  border-bottom: 2px #8936e3 solid;
+  display: inline-block;
+  width: 60px;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.left::before {
+  left: -20px;
+  position: absolute;
+  content: "";
+  border-bottom: 2px #8936e3 solid;
+  display: inline-block;
+  width: 10px;
+  align-self: center;
+  /* margin-right: 5px; */
+}
+
+.left {
+  position: relative;
+  border-bottom: 2px #8936e3 solid;
+  display: inline-block;
+  width: 60px;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.cutting_title {
+  display: flex;
+  justify-content: center;
+  height: 67rpx;
+  line-height: 67rpx;
+}
+
+.showBar {
+  padding: 0 44rpx 45rpx 50rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.last {
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  margin-top: 20rpx;
+}
+
+.shareBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shareBtn1 {
+  width: 240rpx;
+  height: 60rpx;
+  color: white;
+  background: linear-gradient(#8432db, #b78ae7);
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-top: 24rpx;
+  border-radius: 10rpx;
+}
+
+.toastBtn {
+  font-size: 36rpx;
+  padding: 20rpx 0rpx;
+  color:#9320D0;
+  border-top: 1rpx solid #DDDDDD;
+}

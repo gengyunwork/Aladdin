@@ -1,0 +1,102 @@
+<!--pages/home/bargain/details/index.wxml-->
+<base-top-bar title="疯狂砍价"></base-top-bar>
+<view class='head'>
+  <view class='headFirst'>
+    <view class='headUserImg'>
+      <image src='{{userImg}}'></image>
+    </view>
+    <view style='margin-left:48rpx;'>
+      <view style='font-size:30rpx;font-weight:600;color：#999;'>{{userName}}</view>
+      <view style='margin-top:20rpx;'>我发现了一件好货,一起来砍价拿</view>
+    </view>
+  </view>
+
+  <view class='headSecond'>
+    <view style='width: 230rpx;height:165rpx;'>
+      <image src='{{goods_img}}'></image>
+    </view>
+    <view style='width:450rpx;padding-left:20rpx;'>
+      <view class='goodsName'>{{goods_name}}</view>
+      <view class='goodsDetails'>{{goods_details}}</view>
+      <view class='goodsPrice1'>￥{{goods_price1}}</view>
+      <view style='margin-top:15rpx;'>砍价成功:
+        <text style='color:#E95A4A'>￥{{goods_price2}}元</text>拿回家</view>
+    </view>
+  </view>
+
+  <view class='headLast'>
+    <view style="font-size:28rpx">已砍价
+      <text style='color:#8F26CB'>￥{{goods_price3}}</text> 还差
+      <text style='color:#E95A4A'>￥{{goods_price4}}</text>
+    </view>
+    <view>
+      <progress percent="40" stroke-width="12" border-radius="10" activeColor="#8F26CB" active="true" />
+    </view>
+
+    <view class='shareBtn' wx-if="{{type == 0}}">分享给好友,多砍一刀</view>
+    <view wx-if="{{type == 1}}" class='shareBar'>
+      <view class='shareBtn1' bindtap="showModal" data-target="Modal">帮砍一刀</view>
+      <view class='shareBtn1' style=' background: linear-gradient(#D95B4C, #DDA7A1);' bindtap='linkToBargain'>我要参加</view>
+    </view>
+
+    <view style='font-size:25rpx;color:#666;margin-top:25rpx;'>还剩
+      <text style='color:#983FD0'>{{goods_time}}</text>过期,快来砍价吧</view>
+  </view>
+</view>
+
+<view class='body'>
+  <view class='bodyTitle'>砍价帮</view>
+  <scroll-view scroll-y="true" style="height: 400rpx;">
+    <view class='bodyList' wx:for="{{helpList}}" :key>
+      <view class='bodyOther'>
+        <view style='width:65rpx;height:65rpx;'>
+          <image src='{{item.img}}' style=' border-radius: 50%;'></image>
+        </view>
+        <view style='font-size:28rpx;margin-left:20rpx;'>{{item.name}}</view>
+      </view>
+      <view style='font-size:28rpx;'>已砍价
+        <text style='color:#8F24CA'>{{item.price}}</text>元</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='foot'>
+  <view class="cutting_title">
+    <text class="left"></text>
+    <text class="title">活动描述</text>
+    <text class="right"></text>
+  </view>
+
+  <view class='showBar'>
+    <view style='width:260rpx;height:200rpx;'>
+      <image src='{{showImg}}'></image>
+    </view>
+    <view style='font-size:28rpx;margin-left:20rpx;'>
+      <view style="font-weight:600;">{{showName}}</view>
+      <view style='color:#666666;margin-top:20rpx'>{{showPlace}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='last'>
+  富文本
+</view>
+
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">砍价成功</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view>
+      <view style='font-size:28rpx;background:white;padding:20rpx 0;'>以帮砍价 <text style='color:#F92816'>￥15.5</text>元 </view>
+      <view style='width:100%;height:311rpx;'>
+        <image src='{{toastImg}}'></image>
+      </view>
+
+    </view>
+    <view class='toastBtn' bindtap='hideModal'>确定</view>
+  </view>
+</view>

@@ -1,34 +1,24 @@
-// pages/home/commodity/success/index.js
+// pages/user/message/details/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    img: "cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/success.png",
-    goods_name:"哈尔滨五日游哈尔滨五日游",
-    goods_date:"3"
+    msg_id:"",
+    msg_title : "系统通知",
+    msg_content:"系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知",
+    msg_date: "2019-08-21/13:00:25"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-  //点击继续购物 跳转到首页
-  linkToHome:function(e){
-    wx.switchTab({
-      url: "../../../../pages/home/home",
-
+    this.setData({
+      msg_id: options.msg_id,
     })
-    console.log("1")
-  },
-  //点击查看订单 跳转到订单页
-  linkToOrder:function(e){
-    wx.navigateTo({
-      url: '../../../user/order/order',
-    })
+    console.log(options.msg_id)
   },
 
   /**

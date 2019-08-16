@@ -1,0 +1,15 @@
+<!--pages/user/message/details/index.wxml-->
+<!-- 用上一页传来的msg id 获取msg内容 标题也要修改 -->
+<base-top-bar title="消息通知"></base-top-bar>
+<view class='showBar'>
+  <view class='showTitle'><text>{{msg_title}}</text></view>
+  <view class='showContent'>
+    <text>{{msg_content}}</text>
+  </view>
+  <view class='showDate'>
+    <text>{{msg_date}}</text>
+  </view>
+
+</view>
+
+

@@ -1,3 +1,10 @@
 <!--pages/user/message/message.wxml-->
 <!-- 消息通知 -->
-<text>pages/user/message/message.wxml</text>
+<base-top-bar title="消息通知"></base-top-bar>
+<view class='msgBar' wx:for="{{msgList}}" :key bindtap='linkToMsgDetails' data-id='{{item.id}}'>
+  <view class='msgFirst'>
+    <view class='msgTitle'>{{item.title}}</view>
+    <view class='msgDate'>{{item.date}}</view>
+  </view>
+  <view class='msgToast'>{{item.msg}}</view>
+</view>

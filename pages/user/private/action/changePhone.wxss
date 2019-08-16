@@ -1,0 +1,13 @@
+/* pages/user/private/action/changePhone.wxss */
+.btn {
+  width: 100%;
+  height: 100rpx;
+  background: #9B30D6;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color:white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

@@ -17,6 +17,8 @@
 
           @样式5 skin=5 订单
           @数据{img 图片 , place 地点，title 标题 ，toast 详情,type =0 是待使用订单 type=1是已完成订单 type=2是退款订单 }
+
+  
   -->
 
 
@@ -36,12 +38,12 @@
     </view>
 
     <!-- skin=1 -->
-    <view class='showMan1' wx:if="{{skin == 1}}">
+    <view class='showMan1' wx:if="{{skin == 1}}" style='padding-left:10rpx;'>
       <text>已售{{cardData.num}}人</text>
       <view class='showBtn' catchtap='click_btn' data-id="{{cardData.goods_id}}">免费领取</view>
     </view>
     <!-- skin=2 -->
-    <view class='showMan2' wx:if="{{skin == 2}}">
+    <view class='showMan2' wx:if="{{skin == 2}}" style='padding-left:10rpx;'>
       <text>{{cardData.num}}人购买</text>
       <text style='color:#E71515;font-size:22rpx;'>￥{{cardData.price_vip}}会员价</text>
       <text style='font-size:32rpx;color:#333333'>￥{{cardData.price}}</text>
