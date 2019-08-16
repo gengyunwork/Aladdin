@@ -1,6 +1,6 @@
 <!--pages/user/distribution/explain/explain.wxml-->
 <base-top-bar title="分销说明"></base-top-bar>
-<view style="width:100vw;height:calc(100vh - 128rpx);position:relative;">
+<view style="width:100vw;height:calc(100vh - 158rpx);position:relative;">
   <image class="explain-bg" src="cloud://hy-2ecbc6.6879-hy-2ecbc6/Aladdin/explain.jpg"></image>
   <view class="explain">
     <view class="text-center">

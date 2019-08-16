@@ -4,8 +4,9 @@
   top:0;
   left:0;
   width: 100vw;
-  height: 128rpx;
+  height: 160rpx;
   z-index: 999;
+
 }
 
 .topbar-bg{
@@ -16,10 +17,10 @@
   
 }
 .topbar-bg:nth-child(1){
-  height: 40rpx;
+  height: 45rpx;
 }
 
 .topbar-bg:nth-child(2){
-  top:40rpx;
-  height: 88rpx;
+  top:45rpx;
+  height: 115rpx;
 }

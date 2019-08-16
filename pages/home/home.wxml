@@ -92,7 +92,7 @@
         </view>
         
         <view class='qualityTitle'>{{item.title}}</view>
-        <view class='qualityPrice1'>￥{{item.price1}}</view>
+        <view class='qualityPrice1' style='text-decoration:line-through'>￥{{item.price1}}</view>
         <view class='qualityPrice2'>￥{{item.price2}} 会员价</view>
         <view class='qualityBtn'>年会员预约</view>
         <view class='qualityDate'>有效期{{item.date1}}至{{item.date2}}</view>

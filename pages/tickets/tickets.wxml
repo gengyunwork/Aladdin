@@ -1,6 +1,6 @@
 <!--pages/tickets/tickets.wxml-->
 <!-- 票单 -->
-<base-top-bar title="票单" />
+<base-top-bar title="票单" isBack="{{false}}" />
 <view style="position:relative;" class="padding">
   <view class="top-bg flex justify-center align-center text-white text-lg" style="">诚信为本 创新为魂</view>
   <view class="bg-white text-center padding-lg" wx:if="{{!(tickets && tickets.length)}}">

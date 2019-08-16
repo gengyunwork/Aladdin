@@ -38,7 +38,8 @@
     "pages/user/distribution/explain/explain",
     "pages/user/note/detail/detail",
     "pages/home/bargain/finish/index",
-    "pages/home/sale/sale"
+    "pages/home/sale/sale",
+    "pages/user/distribution/myTeam/myTeam"
   ],
   "window": {
     "backgroundTextStyle": "light",

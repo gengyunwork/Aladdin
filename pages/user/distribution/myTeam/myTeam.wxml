@@ -1,0 +1,14 @@
+<!--pages/user/distribution/myTeam/myTeam.wxml-->
+<base-top-bar title="我的团队"></base-top-bar>
+<view class='head'>一级团队</view>
+<view class='item' wx:for="{{teamList}}" wx:key>
+  <view class='left'>
+    <view style='width:80rpx;height:80rpx;'>
+      <image src='{{item.userImg}}' style='border-radius: 50%;'></image>
+    </view>
+    <view style='font-size:30rpx;margin-left:20rpx;'>{{item.userName}}</view>
+  </view>
+  <view class='right'>
+    推广人数:{{item.num}}人
+  </view>
+</view>

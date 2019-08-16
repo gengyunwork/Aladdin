@@ -9,9 +9,9 @@
  -->
  
 <view class="topbar-wrapper">
-  <image src="/images/topbar01.png" class="topbar-bg"></image>
+  <image src="/images/topbar01.png" class="topbar-bg" ></image>
   <image src="/images/topbar02.png" class="topbar-bg"></image>
-  <cu-custom class="base-topbar text-white" isBack="{{isBack}}">
+  <cu-custom class="base-topbar text-white" isBack="{{isBack}}" >
     <view slot="content">{{title}}</view>
   </cu-custom>
 </view>

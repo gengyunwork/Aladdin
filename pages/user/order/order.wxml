@@ -22,7 +22,7 @@
     </view>
     <view wx:if="{{currentData==1}}">
       <view wx:for="{{items[0].orderList}}" wx:key>
-        <pro_card cardData="{{item}}" skin="5" type="0" id="proCard" bind:click_card="linkToCommodity"></pro_card>
+        <pro_card cardData="{{item}}" skin="5" type="0" id="proCard" bind:click_details="linkToDetails"></pro_card>
       </view>
     </view>
     <view wx:if="{{currentData==2}}">

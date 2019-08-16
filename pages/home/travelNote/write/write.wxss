@@ -2,11 +2,11 @@
 
 .edit-box{
   width: 100vw;
-  height: calc(100vh - 128rpx);
+  height: calc(100vh - 158rpx);
   background: white;
   padding: 22rpx;
   position: fixed;
-  top:128rpx;
+  top:158rpx;
   left:-100vw;
   transition: left .5s;
   z-index:999;

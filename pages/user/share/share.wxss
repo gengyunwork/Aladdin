@@ -1,1 +1,12 @@
 /* pages/user/share/share.wxss */
+
+.download {
+  position: absolute;
+  bottom: 0rpx;
+  width: 100%;
+  height: 100rpx;
+  background: #8C21C6;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+}
